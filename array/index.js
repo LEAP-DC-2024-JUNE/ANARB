@@ -92,3 +92,30 @@
 
 
 
+// Number Pow
+// let n = prompt();
+// // let result = 1;
+
+// // for (let pow = 1; result < 1000; pow++){
+// //     result = n ** pow;
+// //     console.log(pow);
+// // }
+// // console.log(result);
+
+
+
+let n = prompt();
+let result = 1;
+let pow = 0;
+
+while (result < 1000) {
+    if (n == 1 || n >= 1000) {
+        console.log("Боломжгүй")
+        break;
+    } 
+    else {
+        pow++;
+        result = n ** pow;
+    }
+}
+console.log(n,"-н", pow, "зэрэг 1000-с их байна")

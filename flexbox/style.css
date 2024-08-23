@@ -1,0 +1,52 @@
+.flexbox {
+    display: flex;
+    gap: 10px;
+}
+.first-column {
+    height: 500px;
+    width: 100px;
+    background-color: green;
+}
+.second-column {
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.first-row {
+    height: 90px;
+    width: 400px;
+    background-color: green;
+}
+.second-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.box {
+    height: 195px;
+    width: 195px;
+    background-color: red;
+
+}
+.third-column {
+    height: 500px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.first-box {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+.second-box {
+    height: 440px;
+    width: 100px;
+    background-color: green;
+}
+#orange {
+    background-color: orange;
+}

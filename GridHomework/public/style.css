@@ -57,7 +57,7 @@ body {
     display: grid;
     grid-template-columns: 428px;
     grid-template-rows: repeat(11, 400px);
-}
+    }
     .grid-item-1 {
         grid-row: 2;
     }

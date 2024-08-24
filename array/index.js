@@ -155,7 +155,7 @@
 
 // }
 
-
+// Sort method
 const array = [2, 3, 1, 0, 4, 9, 8 , 10];
 let a;
 for (let i = 0; i < array.length;) {

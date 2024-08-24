@@ -104,21 +104,21 @@
 
 
 
-let n = prompt();
-let result = 1;
-let pow = 0;
+// let n = prompt();
+// let result = 1;
+// let pow = 0;
 
-while (result < 1000) {
-    if (n == 1 || n >= 1000) {
-        console.log("Боломжгүй")
-        break;
-    } 
-    else {
-        pow++;
-        result = n ** pow;
-    }
-}
-console.log(n,"-н", pow, "зэрэг 1000-с их байна")
+// while (result < 1000) {
+//     if (n == 1 || n >= 1000) {
+//         console.log("Боломжгүй")
+//         break;
+//     } 
+//     else {
+//         pow++;
+//         result = n ** pow;
+//     }
+// }
+// console.log(n,"-н", pow, "зэрэг 1000-с их байна")
 
 
 // Includes Method
@@ -126,7 +126,7 @@ console.log(n,"-н", pow, "зэрэг 1000-с их байна")
 // const array = [100, 200, 300, 400, 500];
 // let inc = prompt();
 
-// for (let i = 0; i <= array.length; i++) {
+// for (let i = 0; i <= array.length - 1; i++) {
 //     if (array[i] == inc) {
 //         console.log("Array includes", inc);
 //     }
@@ -137,12 +137,37 @@ console.log(n,"-н", pow, "зэрэг 1000-с их байна")
 
 
 
+
 // Sort Method
 // const array = [2, 3, 1, 0, 4];
 // const newArray = [];
 // for (let i = array.length - 1; i >= 0; i--) {
 //     if (array[i] > array [i-1]) {
-//         newArray[newArray.length] = array[i]
+//         newArray[newArray.length - 1] = array[i]
 //     }
 // }
 // console.log(newArray)
+
+
+// const array = [2, 3, 1, 0, 4];
+// const newArray = [];
+// for (let i = 1; i < array.length; i++) {
+
+// }
+
+
+const array = [2, 3, 1, 0, 4, 9, 8 , 10];
+let a;
+for (let i = 0; i < array.length;) {
+    if (array[i] > array[i + 1]) {
+        a = array[i];
+        array[i] = array[i + 1];
+        array[i + 1] = a;
+        i--;
+    }
+    else {
+        i++;
+        debugger;
+    }
+}
+console.log(array)

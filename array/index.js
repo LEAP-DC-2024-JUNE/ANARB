@@ -94,13 +94,37 @@
 
 // Number Pow
 // let n = prompt();
-// // let result = 1;
+// let result = 1;
+// let pow;
 
-// // for (let pow = 1; result < 1000; pow++){
-// //     result = n ** pow;
-// //     console.log(pow);
-// // }
-// // console.log(result);
+// for (pow = 0; result < 1000; pow++){
+//     if (n == 1 || n >= 1000) {
+//         console.log("Боломжгүй")
+//         break;
+//     }
+//     else {
+//         result = n ** pow;
+//     }
+// }
+// console.log(n,"-н", pow, "зэрэг 1000-с их байна:", result)
+
+
+
+let n = prompt();
+let result = 0;
+let pow;
+
+for (pow = 0; result < Infinity; pow++) {
+    result = n ** pow;
+    if (result > 1000) {
+        console.log(n,"-н", pow, "зэрэг 1000-с их байна:", result);
+        break;
+    }
+    else if (n == 1 || n >= 1000) {
+        console.log("Боломжгүй")
+        break;
+    }
+}
 
 
 
@@ -118,7 +142,7 @@
 //         result = n ** pow;
 //     }
 // }
-// console.log(n,"-н", pow, "зэрэг 1000-с их байна")
+// console.log(n,"-н", pow, "зэрэг 1000-с их байна:", result)
 
 
 // Includes Method
@@ -156,18 +180,17 @@
 // }
 
 // Sort method
-const array = [2, 3, 1, 0, 4, 9, 8 , 10];
-let a;
-for (let i = 0; i < array.length;) {
-    if (array[i] > array[i + 1]) {
-        a = array[i];
-        array[i] = array[i + 1];
-        array[i + 1] = a;
-        i--;
-    }
-    else {
-        i++;
-        debugger;
-    }
-}
-console.log(array)
+// const array = [2, 3, 1, 0, 4, 9, 8 , 10];
+// let a;
+// for (let i = 0; i < array.length;) {
+//     if (array[i] > array[i + 1]) {
+//         a = array[i];
+//         array[i] = array[i + 1];
+//         array[i + 1] = a;
+//         i--;
+//     }
+//     else {
+//         i++;
+//     }
+// }
+// console.log(array)

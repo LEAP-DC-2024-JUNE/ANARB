@@ -1,0 +1,11 @@
+.Aside {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  color: yellow;
+  border: 5px solid yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 500;
+}

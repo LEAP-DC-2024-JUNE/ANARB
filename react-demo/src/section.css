@@ -1,0 +1,9 @@
+.Section {
+  grid-column: 1/3;
+  grid-row: 3/4;
+  color: pink;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  border: 5px solid pink;
+}

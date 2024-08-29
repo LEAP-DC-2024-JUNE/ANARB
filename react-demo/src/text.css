@@ -1,6 +1,4 @@
-.Navbar {
-  display: flex;
-  gap: 3em;
+.text {
   color: white;
   text-decoration: none;
 }

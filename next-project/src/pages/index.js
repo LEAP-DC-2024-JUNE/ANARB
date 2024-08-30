@@ -453,7 +453,8 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-2 items-center">
             <p className="font-normal text-lg text-gray-600">
-              You may also find me on these platforms!
+              You may also find me on these platforms! You may also find me on
+              these platforms!
             </p>
             <div className="flex gap-1">
               <GithubIcon />

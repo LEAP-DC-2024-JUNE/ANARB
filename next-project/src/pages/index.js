@@ -467,7 +467,7 @@ export default function Home() {
         <div className="px-8">
           {/* <CopyrightIcon /> */}
           <p className="font-normal text-lg text-gray-600 text-center">
-            2024 | Greetings with ❤️️ from Ulaanbaatar
+            2024 | Greetings with ❤️️ from Ulaanbaatar.
           </p>
         </div>
       </div>

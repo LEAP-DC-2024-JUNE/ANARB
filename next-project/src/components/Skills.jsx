@@ -11,9 +11,10 @@ import FigmaaIcon from "../svg/FigmaIcon";
 import CypressIcon from "../svg/CypressIcon";
 import StorybookIcon from "../svg/StorybookIcon";
 import GitIcon from "../svg/GitIcon";
-// import NextjsIcon from "../svg/NextjsIcon";
-// import PostgreSQLIcon from "../svg/PostgreSQLIcon";
-// import TailwindIcon from "../svg/Tailwind-icon";
+import Image from "next/image";
+import Nextjs from "../../public/nextjs.png";
+import Postgresql from "../../public/postgresql.png";
+import Tailwindcss from "../../public/tailwindcss.png";
 
 function Skills() {
   return (
@@ -42,7 +43,7 @@ function Skills() {
             <ReactIcon />
             <p className="font-normal text-lg text-gray-600">React</p>
           </div>
-          {/* <NextjsIcon /> */}
+          <Image src={Nextjs} />
           <div>
             <NodejsIcon />
             <p className="font-normal text-lg text-gray-600">Node js</p>
@@ -61,7 +62,7 @@ function Skills() {
           </div>
         </div>
         <div className="flex justify-between">
-          {/* <PostgreSQLIcon /> */}
+          <Image src={Postgresql} />
           <div>
             <MongoDBIcon />
             <p className="font-normal text-lg text-gray-600">Mongo DB</p>
@@ -70,7 +71,7 @@ function Skills() {
             <SassIcon />
             <p className="font-normal text-lg text-gray-600">Sass/Scss</p>
           </div>
-          {/* <TailwindIcon /> */}
+          <Image src={Tailwindcss} />
           <div>
             <FigmaaIcon />
             <p className="font-normal text-lg text-gray-600">Figma</p>

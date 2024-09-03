@@ -1,5 +1,8 @@
-// import WorkSectionPic1 from "../svg/WorkSectionPic1";
+import Image from "next/image";
+import UbCab from "../../public/UbCab.png";
 import IconButton from "../svg/IconButton";
+import Mentorhub from "../../public/Mentorhub.png";
+import iToim from "../../public/iToim.png";
 
 function Work() {
   return (
@@ -16,7 +19,9 @@ function Work() {
           </p>
         </div>
         <div className="flex rounded-xl drop-shadow-md bg-gray-100">
-          <div>{/* <WorkSectionPic1 /> */}</div>
+          <div className="p-12">
+            <Image src={UbCab} />
+          </div>
           <div className="flex flex-col gap-6 p-12">
             <p className="font-semibold test-xl text-gray-900">UBCab</p>
             <p className="font-normal text-base text-gray-600">
@@ -62,6 +67,9 @@ function Work() {
           </div>
         </div>
         <div className="flex rounded-xl drop-shadow-md bg-gray-100">
+          <div className="p-12">
+            <Image src={Mentorhub} />{" "}
+          </div>
           <div className="flex flex-col gap-6 p-12">
             <p className="font-semibold test-xl text-gray-900">MentorHub</p>
             <p className="font-normal text-base text-gray-600">
@@ -108,7 +116,9 @@ function Work() {
           <div></div>
         </div>
         <div className="flex rounded-xl drop-shadow-md bg-gray-100">
-          <div></div>
+          <div className="p-12">
+            <Image src={iToim} />
+          </div>
           <div className="flex flex-col gap-6 p-12">
             <p className="font-semibold test-xl text-gray-900">iToim</p>
             <p className="font-normal text-base text-gray-600">

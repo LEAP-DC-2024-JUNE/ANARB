@@ -3,14 +3,15 @@ import AvailableIcon from "../svg/available-icon";
 import GithubIcon from "../svg/Github-icon";
 import TwitterIcon from "../svg/Twitter-icon";
 import FigmaIcon from "../svg/Figma-icon";
+import HeroPic from "@/svg/HeroPic";
 
 function Hero() {
   return (
     <div className="w-full px-20 py-24 bg-gray flex justify-between gap-12">
-      <div className="flex flex-col gap-12 w-96">
-        <div>
-          <h1 className=" font-bold text-6xl text-gray-900">Hi, I'm Anar</h1>
-          <p className="font-normal text-base text-gray-600">
+      <div className="flex flex-col gap-12 w-1/2">
+        <div className="flex flex-col gap-2">
+          <h1 className=" font-bold text-6xl text-gray-900">Hi, I'm Anar👋</h1>
+          <p className="font-normal text-base text-gray-600 ">
             I specialize in full stack development, particularly with React.js
             and Node.js. My main goal is to create exceptional digital
             experiences that are fast, visually appealing, and accessible to
@@ -38,7 +39,9 @@ function Hero() {
           <FigmaIcon />
         </div>
       </div>
-      <div></div>
+      <div>
+        <HeroPic />
+      </div>
     </div>
   );
 }

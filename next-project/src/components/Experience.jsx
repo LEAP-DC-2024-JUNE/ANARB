@@ -1,4 +1,5 @@
-import UpworkLogo from "../svg/UpworkLogo";
+import Image from "next/image";
+import Picc from "../svg/UpworkLogo.png";
 
 function Experience() {
   return (
@@ -13,8 +14,10 @@ function Experience() {
           Here is a quick summary of my most recent experiences:
         </p>
       </div>
-      <div className="flex gap-12 bg-white p-8">
-        <div>{/* <UpworkLogo /> */}</div>
+      <div className="flex justify-between gap-12 bg-white p-8">
+        <div>
+          <Image src={Picc} />
+        </div>
         <div className="flex flex-col gap-4">
           <p className="font-semibold text-xl text-gray-900">
             Sr. Frontend Developer
@@ -32,8 +35,10 @@ function Experience() {
           </p>
         </div>
       </div>
-      <div className="flex gap-12 bg-white p-8">
-        <div>{/* <UpworkLogo /> */}</div>
+      <div className="flex justify-between gap-12 bg-white p-8">
+        <div>
+          <Image src={Picc} />
+        </div>
         <div className="flex flex-col gap-4">
           <p className="font-semibold text-xl text-gray-900">Team Lead</p>
           <div className="font-normal text-lg text-gray-600 flex flex-col gap-1">
@@ -49,8 +54,10 @@ function Experience() {
           </p>
         </div>
       </div>
-      <div className="flex gap-12 bg-white p-8">
-        <div>{/* <UpworkLogo /> */}</div>
+      <div className="flex justify-between  gap-12 bg-white p-8">
+        <div>
+          <Image src={Picc} />
+        </div>
         <div className="flex flex-col gap-4">
           <p className="font-semibold text-xl text-gray-900">
             Full Stack Developer

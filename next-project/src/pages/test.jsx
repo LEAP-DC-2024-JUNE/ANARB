@@ -59,31 +59,53 @@ const Test = () => {
         title="Ubcab"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
         imgSrc={UbCab}
-        // tag={[
-        //   eact,
-        //   Next.js,
-        //   Typescript,
-        //   Nest.js,
-        //   PostgreSQL,
-        //   Tailwindcss,
-        //   Figma,
-        //   Cypress,
-        //   Storybook,
-        //   Git,
-        // ]}
+        tags={[
+          `React`,
+          `Next.js`,
+          `Typescript`,
+          `Nest.js`,
+          `PostgreSQL`,
+          `Tailwindcss`,
+          `Figma`,
+          `Cypress`,
+          `Storybook`,
+          `Git`,
+        ]}
       />
       <WorkProject
         title="Mentorhub"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
         imgSrc={Mentorhub}
-        tag="React"
+        tags={[
+          `React`,
+          `Next.js`,
+          `Typescript`,
+          `Nest.js`,
+          `PostgreSQL`,
+          `Tailwindcss`,
+          `Figma`,
+          `Cypress`,
+          `Storybook`,
+          `Git`,
+        ]}
         reverse={true}
       />
       <WorkProject
         title="iToim"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
         imgSrc={iToim}
-        tag={Tags}
+        tags={[
+          `React`,
+          `Next.js`,
+          `Typescript`,
+          `Nest.js`,
+          `PostgreSQL`,
+          `Tailwindcss`,
+          `Figma`,
+          `Cypress`,
+          `Storybook`,
+          `Git`,
+        ]}
       />
     </div>
   );

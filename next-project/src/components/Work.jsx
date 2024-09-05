@@ -66,7 +66,7 @@ function Work() {
             </div>
           </div>
         </div>
-        <div className="flex rounded-xl drop-shadow-md bg-gray-100">
+        <div className="flex flex-row-reverse rounded-xl drop-shadow-md bg-gray-100">
           <div className="p-12">
             <Image src={Mentorhub} />{" "}
           </div>

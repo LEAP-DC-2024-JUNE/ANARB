@@ -15,20 +15,15 @@ import Image from "next/image";
 import Nextjs from "../../public/nextjs.png";
 import Postgresql from "../../public/postgresql.png";
 import Tailwindcss from "../../public/tailwindcss.png";
+import { Container } from "../components/Container";
 
 function Skills() {
   return (
     <div className="w-full px-20 py-24 bg-gray flex flex-col gap-12">
-      <div className="flex flex-col gap-4">
-        <div className="text-center">
-          <span className="rounded-xl bg-gray-200 px-1 py-2 font-medium text-sm">
-            Skills
-          </span>
-        </div>
-        <p className="font-normal text-xl text-center">
-          The skills, tools and technologies I am really good at:
-        </p>
-      </div>
+      <Container
+        tagTitle="Skills"
+        subHeading="The skills, tools and technologies I am really good at:"
+      />
       <div className="flex flex-col gap-12">
         <div className="flex justify-between">
           <div>

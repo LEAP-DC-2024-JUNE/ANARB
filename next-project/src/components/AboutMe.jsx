@@ -1,19 +1,16 @@
 import AboutPic from "@/svg/AboutPic";
+import { Container } from "../components/Container";
 
 function AboutMe() {
   return (
     <div className="w-full px-20 py-24 bg-gray-50">
       <div className="px-8 flex flex-col gap-12">
-        <div className="text-center">
-          <span className="rounded-xl bg-gray-200 px-1 py-2 font-medium text-sm">
-            About me
-          </span>
-        </div>
+        <Container tagTitle="About me" />
         <div className="flex gap-12">
-          <div className="w-full">
+          <div className="w-[584px]">
             <AboutPic />
           </div>
-          <div className="flex flex-col gap-6">
+          <div className="w-[584px] flex flex-col gap-6">
             <h1 className="font-semibold text-3xl text-gray-900">
               Curious about me? Here you have it:
             </h1>

@@ -55,6 +55,7 @@ import Upwork from "../svg/UpworkLogo.png";
 import { Container } from "../components/Container";
 import Header from "../components/Header";
 import { Cardd } from "../components/Cardd";
+import Experience from "../components/Experience";
 const Test = () => {
   return (
     <div>
@@ -65,47 +66,7 @@ const Test = () => {
           subHeading="The skills, tools and technologies I am really good at:"
         />
       </div>
-      <div className="w-full py-24 px-20 bg-gray-50">
-        <div className="px-8 flex flex-col gap-12">
-          <Container
-            tagTitle="Experience"
-            subHeading="Here is a quick summary of my most recent experiences:"
-          />
-          <Cardd
-            imgSrc={Upwork}
-            title="Sr. Frontend Developer"
-            descriptions={[
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "Ut pretium arcu et massa semper, id fringilla leo semper.",
-              "Sed quis justo ac magna.",
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            ]}
-            timeline="Nov 2021 - Present"
-          />
-          <Cardd
-            imgSrc={Upwork}
-            title="Team Lead"
-            descriptions={[
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "Ut pretium arcu et massa semper, id fringilla leo semper.",
-              "Sed quis justo ac magna.",
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            ]}
-            timeline="Jul 2017 - Oct 2021"
-          />
-          <Cardd
-            imgSrc={Upwork}
-            title="Full Stack Developer"
-            descriptions={[
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "Ut pretium arcu et massa semper, id fringilla leo semper.",
-              "Sed quis justo ac magna.",
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            ]}
-            timeline="Dec 2015 - May 2017"
-          />
-        </div>
-      </div>
+      <Experience />
       <div className="w-full px-20 py-24 bg-gray">
         <div className="px-8 flex flex-col gap-12">
           <Container

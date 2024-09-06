@@ -8,12 +8,12 @@ export const WorkProject = (props) => {
           <Image src={imgSrc} />
         </div>
         <div className="flex flex-col gap-6 p-12">
-          <div className="font-semibold test-xl text-gray-900">{title}</div>
+          <div className="font-semibold text-xl text-gray-900">{title}</div>
           <p className="font-normal text-base text-gray-600">{description}</p>
-          <div className="flex gap-2">
+          <div className="flex gap-2 flex-wrap">
             {tags.map((tag) => {
               return (
-                <span className="rounded-xl bg-gray-200 px-1 py-2 font-medium text-sm">
+                <span className="rounded-xl bg-gray-200 px-5 py-1 font-medium text-sm text-gray-600">
                   {tag}
                 </span>
               );
@@ -29,12 +29,12 @@ export const WorkProject = (props) => {
           <Image src={imgSrc} />
         </div>
         <div className="flex flex-col gap-6 p-12">
-          <div className="font-semibold test-xl text-gray-900">{title}</div>
+          <div className="font-semibold text-xl text-gray-900">{title}</div>
           <p className="font-normal text-base text-gray-600">{description}</p>
-          <div className="flex gap-2">
+          <div className="flex gap-2 flex-wrap">
             {tags.map((tag) => {
               return (
-                <span className="rounded-xl bg-gray-200 px-1 py-2 font-medium text-sm">
+                <span className="rounded-xl bg-gray-200 px-5 py-1 font-medium text-sm text-gray-600">
                   {tag}
                 </span>
               );

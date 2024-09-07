@@ -92,20 +92,20 @@
 // }
 // console.log(n,"-н", pow, "зэрэг 1000-с их байна:", result)
 
-let n = prompt();
-let result = 0;
-let pow;
+// let n = prompt();
+// let result = 0;
+// let pow;
 
-for (pow = 0; result < Infinity; pow++) {
-  result = n ** pow;
-  if (result > 1000) {
-    console.log(n, "-н", pow, "зэрэг 1000-с их байна:", result);
-    break;
-  } else if (n == 1 || n >= 1000) {
-    console.log("Боломжгүй");
-    break;
-  }
-}
+// for (pow = 0; result < Infinity; pow++) {
+//   result = n ** pow;
+//   if (result > 1000) {
+//     console.log(n, "-н", pow, "зэрэг 1000-с их байна:", result);
+//     break;
+//   } else if (n == 1 || n >= 1000) {
+//     console.log("Боломжгүй");
+//     break;
+//   }
+// }
 
 // let n = prompt();
 // let result = 1;
@@ -169,9 +169,11 @@ for (pow = 0; result < Infinity; pow++) {
 // }
 // console.log(array)
 
-const arr = [1, 5, 3, 4, 100];
-
-let sum = 0;
-arr.map((element) => {
-  sum = sum + element;
-});
+const array = [2, 5, 100];
+function doubleNumbers(array) {
+  const result = array.map((element) => {
+    return element * 2;
+  });
+  return result;
+}
+console.log(doubleNumbers(array));

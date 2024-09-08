@@ -4,7 +4,7 @@ import HeroPic from "@/svg/HeroPic";
 import { Social } from "../components/Social";
 const Hero = () => {
   return (
-    <div className="w-full px-20 py-24 bg-white">
+    <div className="w-full px-20 py-24 bg-white dark:bg-slate-800">
       <div className="px-8 flex gap-48">
         <div className="flex flex-col gap-12 w-[600px]">
           <div className="flex flex-col gap-2">

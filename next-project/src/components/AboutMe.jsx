@@ -1,7 +1,7 @@
 import AboutPic from "@/svg/AboutPic";
 import { Container } from "../components/Container";
 
-function AboutMe() {
+const AboutMe = () => {
   return (
     <div className="w-full px-20 py-24 bg-gray-50">
       <div className="px-8 flex flex-col gap-12">
@@ -53,5 +53,5 @@ function AboutMe() {
       </div>
     </div>
   );
-}
+};
 export default AboutMe;

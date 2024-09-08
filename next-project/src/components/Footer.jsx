@@ -1,4 +1,4 @@
-function Footer() {
+const Footer = () => {
   return (
     <div className="w-full px-20 py-6 bg-gray-50">
       <div className="px-8 flex justify-center">
@@ -8,5 +8,5 @@ function Footer() {
       </div>
     </div>
   );
-}
+};
 export default Footer;

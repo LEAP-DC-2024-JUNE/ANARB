@@ -10,14 +10,14 @@ import Footer from "../components/Footer";
 export default function Portfolio() {
   return (
     <div>
-      <Header></Header>
-      <Hero></Hero>
-      <AboutMe></AboutMe>
-      <Skills></Skills>
-      <Experience></Experience>
-      <Work></Work>
-      <ContactMe></ContactMe>
-      <Footer></Footer>
+      <Header />
+      <Hero />
+      <AboutMe />
+      <Skills />
+      <Experience />
+      <Work />
+      <ContactMe />
+      <Footer />
     </div>
   );
 }

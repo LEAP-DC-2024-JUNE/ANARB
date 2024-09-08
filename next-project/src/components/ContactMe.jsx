@@ -4,7 +4,7 @@ import PhoneIcon from "../svg/PhoneIcon";
 import { Social } from "../components/Social";
 import { Container } from "../components/Container";
 
-function ContactMe() {
+const ContactMe = () => {
   return (
     <div className="w-full px-20 py-24 bg-gray">
       <div className="px-8 flex flex-col gap-12">
@@ -38,5 +38,5 @@ function ContactMe() {
       </div>
     </div>
   );
-}
+};
 export default ContactMe;

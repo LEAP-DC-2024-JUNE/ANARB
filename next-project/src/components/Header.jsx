@@ -1,6 +1,6 @@
 import Icon from "../svg/icon";
 
-function Header() {
+const Header = () => {
   return (
     <div className="w-full px-20 py-4 bg-gray flex justify-between border-b-2 ">
       <span className=" font-mono font-normal text-3xl text-gray-900">
@@ -18,5 +18,5 @@ function Header() {
       </div>
     </div>
   );
-}
+};
 export default Header;

@@ -2,7 +2,7 @@ import LocationIcon from "../svg/location-icon";
 import AvailableIcon from "../svg/available-icon";
 import HeroPic from "@/svg/HeroPic";
 import { Social } from "../components/Social";
-function Hero() {
+const Hero = () => {
   return (
     <div className="w-full px-20 py-24 bg-white">
       <div className="px-8 flex gap-48">
@@ -41,5 +41,5 @@ function Hero() {
       </div>
     </div>
   );
-}
+};
 export default Hero;

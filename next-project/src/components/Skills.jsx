@@ -17,7 +17,7 @@ import Postgresql from "../../public/postgresql.png";
 import Tailwindcss from "../../public/tailwindcss.png";
 import { Container } from "../components/Container";
 
-function Skills() {
+const Skills = () => {
   return (
     <div className="w-full px-20 py-24 bg-gray flex flex-col gap-12">
       <Container
@@ -87,5 +87,5 @@ function Skills() {
       </div>
     </div>
   );
-}
+};
 export default Skills;

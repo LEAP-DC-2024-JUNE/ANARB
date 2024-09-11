@@ -105,8 +105,8 @@ import Upwork from "../svg/UpworkLogo.png";
 
 const Experience = () => {
   return (
-    <div className="w-full py-24 px-20 bg-gray-50">
-      <div className="px-8 flex flex-col gap-12">
+    <div className="w-full px-4 py-16 flex lg:py-24 lg:px-20 lg:justify-center bg-gray-50">
+      <div className=" flex flex-col gap-6 lg:gap-12 lg:px-8">
         <Container
           tagTitle="Experience"
           subHeading="Here is a quick summary of my most recent experiences:"

@@ -175,8 +175,8 @@ import Mentorhub from "../../public/Mentorhub.png";
 import iToim from "../../public/iToim.png";
 const Work = () => {
   return (
-    <div className="w-full px-20 py-24 bg-white">
-      <div className="px-8 flex flex-col gap-12">
+    <div className="w-full px-4 py-16  bg-white flex lg:px-20 lg:py-24">
+      <div className=" flex flex-col gap-6 lg:px-8 lg:gap-12">
         <Container
           tagTitle="Work"
           subHeading="Some of the noteworthy projects I have built:"

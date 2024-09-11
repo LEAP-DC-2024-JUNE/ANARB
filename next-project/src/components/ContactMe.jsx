@@ -6,8 +6,8 @@ import { Container } from "../components/Container";
 
 const ContactMe = () => {
   return (
-    <div className="w-full px-20 py-24 bg-gray">
-      <div className="px-8 flex flex-col gap-12">
+    <div className="w-full px-4 py-16 bg-gray flex justify-center lg:px-20 lg:py-24">
+      <div className="flex flex-col gap-6 lg:gap-12 lg:px-8">
         <Container
           tagTitle="Get in touch"
           subHeading="What’s next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect."

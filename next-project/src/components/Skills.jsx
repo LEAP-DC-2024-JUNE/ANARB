@@ -28,60 +28,86 @@ const Skills = () => {
         <div className="flex flex-wrap lg:justify-between">
           <div>
             <JavascriptIcon />
-            <p className="font-normal text-lg text-gray-600">Javascript</p>
+            <p className="font-normal text-lg text-gray-600 dark:text-gray-300">
+              Javascript
+            </p>
           </div>
           <div>
             <TypescriptIcon />
-            <p className="font-normal text-lg text-gray-600">Typescript</p>
+            <p className="font-normal text-lg text-gray-600 dark:text-gray-300">
+              Typescript
+            </p>
           </div>
           <div>
             <ReactIcon />
-            <p className="font-normal text-lg text-gray-600">React</p>
+            <p className="font-normal text-lg text-gray-600 dark:text-gray-300">
+              React
+            </p>
           </div>
-          <Image src={Nextjs} />
+          {/* <Image src={Nextjs} /> */}
           <div>
             <NodejsIcon />
-            <p className="font-normal text-lg text-gray-600">Node js</p>
+            <p className="font-normal text-lg text-gray-600 dark:text-gray-300">
+              Node js
+            </p>
           </div>
           <div>
             <ExpressjsIcon />
-            <p className="font-normal text-lg text-gray-600">Express js</p>
+            <p className="font-normal text-lg text-gray-600 dark:text-gray-300">
+              Express js
+            </p>
           </div>
           <div>
             <NestjsIcon />
-            <p className="font-normal text-lg text-gray-600">Nest js</p>
+            <p className="font-normal text-lg text-gray-600 dark:text-gray-300">
+              Nest js
+            </p>
           </div>
           <div>
             <SocketioIcon />
-            <p className="font-normal text-lg text-gray-600">Socket io</p>
+            <p className="font-normal text-lg text-gray-600 dark:text-gray-300">
+              Socket io
+            </p>
           </div>
         </div>
         <div className="flex flex-wrap justify-between">
-          <Image src={Postgresql} />
+          {/* <Image src={Postgresql} /> */}
           <div>
             <MongoDBIcon />
-            <p className="font-normal text-lg text-gray-600">Mongo DB</p>
+            <p className="font-normal text-lg text-gray-600 dark:text-gray-300">
+              Mongo DB
+            </p>
           </div>
           <div>
             <SassIcon />
-            <p className="font-normal text-lg text-gray-600">Sass/Scss</p>
+            <p className="font-normal text-lg text-gray-600 dark:text-gray-300">
+              Sass/Scss
+            </p>
           </div>
-          <Image src={Tailwindcss} />
+          {/* <Image src={Tailwindcss} /> */}
           <div>
             <FigmaaIcon />
-            <p className="font-normal text-lg text-gray-600">Figma</p>
+            <p className="font-normal text-lg text-gray-600 dark:text-gray-300">
+              Figma
+            </p>
           </div>
           <div>
             <CypressIcon />
-            <p className="font-normal text-lg text-gray-600">Cypress</p>
+            <p className="font-normal text-lg text-gray-600 dark:text-gray-300">
+              Cypress
+            </p>
           </div>
           <div>
             <StorybookIcon />
-            <p className="font-normal text-lg text-gray-600">Storybook</p>
+            <p className="font-normal text-lg text-gray-600 dark:text-gray-300">
+              Storybook
+            </p>
           </div>
           <div>
             <GitIcon />
-            <p className="font-normal text-lg text-gray-600">Git</p>
+            <p className="font-normal text-lg text-gray-600 dark:text-gray-300">
+              Git
+            </p>
           </div>
         </div>
       </div>

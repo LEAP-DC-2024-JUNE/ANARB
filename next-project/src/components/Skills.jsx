@@ -19,13 +19,13 @@ import { Container } from "../components/Container";
 
 const Skills = () => {
   return (
-    <div className="w-full px-20 py-24 bg-gray flex flex-col gap-12 dark:bg-gray-950">
+    <div className="w-full px-4 py-16 lg:px-20 lg:py-24 bg-gray flex flex-col gap-12 dark:bg-gray-950">
       <Container
         tagTitle="Skills"
         subHeading="The skills, tools and technologies I am really good at:"
       />
       <div className="flex flex-col gap-12">
-        <div className="flex justify-between">
+        <div className="flex flex-wrap lg:justify-between">
           <div>
             <JavascriptIcon />
             <p className="font-normal text-lg text-gray-600">Javascript</p>
@@ -56,7 +56,7 @@ const Skills = () => {
             <p className="font-normal text-lg text-gray-600">Socket io</p>
           </div>
         </div>
-        <div className="flex justify-between">
+        <div className="flex flex-wrap justify-between">
           <Image src={Postgresql} />
           <div>
             <MongoDBIcon />

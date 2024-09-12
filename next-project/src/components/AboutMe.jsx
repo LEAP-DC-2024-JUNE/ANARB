@@ -3,10 +3,10 @@ import { Container } from "../components/Container";
 
 const AboutMe = () => {
   return (
-    <div className="w-full px-20 py-24 bg-gray-50 dark:bg-gray-900">
-      <div className="px-8 flex flex-col gap-12">
+    <div className="w-full px-4 py-16 lg:px-20 lg:py-24 bg-gray-50 dark:bg-gray-900">
+      <div className=" flex flex-col gap-6 lg:gap-12 lg:px-8">
         <Container tagTitle="About me" />
-        <div className="flex gap-12">
+        <div className="flex flex-col lg:flex-row gap-12">
           <div className="w-[584px]">
             <AboutPic />
           </div>

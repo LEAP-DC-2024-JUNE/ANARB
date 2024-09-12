@@ -4,10 +4,10 @@ import HeroPic from "@/svg/HeroPic";
 import { Social } from "../components/Social";
 const Hero = () => {
   return (
-    <div className="w-full px-20 py-24 bg-white dark:bg-gray-950">
-      <div className="px-8 flex gap-48">
-        <div className="flex flex-col gap-12 w-[600px]">
-          <div className="flex flex-col gap-2">
+    <div className="w-full px-4 py-16 lg:px-20 lg:py-24 bg-white dark:bg-gray-950">
+      <div className=" flex flex-col-reverse lg:flex-row lg:px-8 lg:gap-48">
+        <div className="flex flex-col gap-12 lg:w-[600px]">
+          <div className="flex flex-col gap-12 lg:gap-2">
             <h1 className=" font-bold text-6xl text-gray-900 dark:text-white">
               Hi, I'm Anar👋
             </h1>

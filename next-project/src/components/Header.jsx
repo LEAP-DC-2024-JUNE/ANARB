@@ -12,7 +12,7 @@ const Header = () => {
     }
   };
   return (
-    <div className="w-full px-20 py-4 bg-gray flex justify-between border-b-2">
+    <div className="w-full px-20 py-4 bg-gray flex justify-between border-b-2 dark:bg-gray-950 dark:border-gray-950">
       <span className=" font-mono font-normal text-3xl text-gray-900 dark:text-white">
         ANAR
       </span>
@@ -24,7 +24,7 @@ const Header = () => {
         <button onClick={toggleTheme}>
           <Icon />
         </button>
-        <button className="rounded-xl bg-gray-900 text-gray-50 font-medium text-base px-4 py-[6px] dark:bg-white">
+        <button className="rounded-xl bg-gray-900 text-gray-50 font-medium text-base px-4 py-[6px] dark:bg-gray-50 dark:text-gray-900">
           Download CV
         </button>
       </div>

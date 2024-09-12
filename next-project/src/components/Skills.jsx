@@ -19,7 +19,7 @@ import { Container } from "../components/Container";
 
 const Skills = () => {
   return (
-    <div className="w-full px-20 py-24 bg-gray flex flex-col gap-12">
+    <div className="w-full px-20 py-24 bg-gray flex flex-col gap-12 dark:bg-gray-950">
       <Container
         tagTitle="Skills"
         subHeading="The skills, tools and technologies I am really good at:"

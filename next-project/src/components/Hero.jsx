@@ -2,10 +2,13 @@ import LocationIcon from "../svg/location-icon";
 import AvailableIcon from "../svg/available-icon";
 import HeroPic from "@/svg/HeroPic";
 import { Social } from "../components/Social";
+import DarkLocationIcon from "@/svg/DarkLocationIcon";
+import { useTheme } from "next-themes";
 const Hero = () => {
+  const { theme } = useTheme();
   return (
     <div className="w-full px-4 py-16 lg:px-20 lg:py-24 bg-white dark:bg-gray-950">
-      <div className=" flex flex-col-reverse items-center lg:flex-row lg:px-8 lg:gap-48">
+      <div className=" flex flex-col-reverse items-center gap-12 lg:flex-row lg:px-8 lg:gap-48">
         <div className="flex flex-col gap-12 lg:w-[600px]">
           <div className="flex flex-col gap-12 lg:gap-2">
             <h1 className=" font-bold text-6xl text-gray-900 dark:text-white">
@@ -21,7 +24,7 @@ const Hero = () => {
           </div>
           <div>
             <div className="flex gap-2">
-              <LocationIcon />
+              {theme == "dark" ? <DarkLocationIcon /> : <LocationIcon />}
               <p className="font-normal text-lg text-gray-600 dark:text-gray-300">
                 Ulaanbaatar, Mongolia
               </p>

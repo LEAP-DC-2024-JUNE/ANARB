@@ -3,8 +3,13 @@ import CopyIcon from "../svg/CopyIcon";
 import PhoneIcon from "../svg/PhoneIcon";
 import { Social } from "../components/Social";
 import { Container } from "../components/Container";
+import { useTheme } from "next-themes";
+import DarkEmailIcon from "../svg/DarkEmailIcon";
+import DarkCopyIcon from "../svg/DarkCopyIcon";
+import DarkPhoneIcon from "../svg/DarkPhoneIcon";
 
 const ContactMe = () => {
+  const { theme } = useTheme();
   return (
     <div className="w-full px-4 py-16 bg-gray flex lg:justify-center lg:px-20 lg:py-24 dark:bg-gray-950">
       <div className="flex flex-col gap-6 lg:gap-12 lg:px-8">
@@ -14,18 +19,18 @@ const ContactMe = () => {
         />
         <div className="flex flex-col gap-4 items-center">
           <div className="flex gap-5 items-center">
-            <EmailIcon />
+            {theme == "dark" ? <DarkEmailIcon /> : <EmailIcon />}
             <p className="font-semibold text-4xl text-gray-900 dark:text-gray-50">
               tom@pinecone.mn
             </p>
-            <CopyIcon />
+            {theme == "dark" ? <DarkCopyIcon /> : <CopyIcon />}
           </div>
           <div className="flex gap-5 items-center">
-            <PhoneIcon />
+            {theme == "dark" ? <DarkPhoneIcon /> : <PhoneIcon />}
             <p className="font-semibold text-4xl text-gray-900 dark:text-gray-50">
               +976 88112233
             </p>
-            <CopyIcon />
+            {theme == "dark" ? <DarkCopyIcon /> : <CopyIcon />}
           </div>
         </div>
         <div className="flex flex-col gap-2 items-center">

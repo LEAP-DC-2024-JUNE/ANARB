@@ -16,16 +16,21 @@ import Nextjs from "../../public/nextjs.png";
 import Postgresql from "../../public/postgresql.png";
 import Tailwindcss from "../../public/tailwindcss.png";
 import { Container } from "../components/Container";
+import DarkExpressJsIcon from "../svg/DarkExpressJsIcon";
+import { useTheme } from "next-themes";
+import DarkSocketIo from "@/svg/DarkSocketIO";
+import DarkCypressIcon from "@/svg/DarkCypressIcon";
 
 const Skills = () => {
+  const { theme } = useTheme();
   return (
     <div className="w-full px-4 py-16 lg:px-20 lg:py-24 bg-gray flex flex-col gap-12 dark:bg-gray-950">
       <Container
         tagTitle="Skills"
         subHeading="The skills, tools and technologies I am really good at:"
       />
-      <div className="flex flex-col gap-12">
-        <div className="flex flex-wrap lg:justify-between">
+      <div className="flex flex-col gap-4 lg:flex lg:flex-col lg:gap-12">
+        <div className="flex flex-wrap gap-16 justify-around lg:justify-between">
           <div>
             <JavascriptIcon />
             <p className="font-normal text-lg text-gray-600 dark:text-gray-300">
@@ -44,7 +49,7 @@ const Skills = () => {
               React
             </p>
           </div>
-          {/* <Image src={Nextjs} /> */}
+          <Image src={Nextjs} />
           <div>
             <NodejsIcon />
             <p className="font-normal text-lg text-gray-600 dark:text-gray-300">
@@ -52,7 +57,7 @@ const Skills = () => {
             </p>
           </div>
           <div>
-            <ExpressjsIcon />
+            {theme == "dark" ? <DarkExpressJsIcon /> : <ExpressjsIcon />}
             <p className="font-normal text-lg text-gray-600 dark:text-gray-300">
               Express js
             </p>
@@ -64,13 +69,13 @@ const Skills = () => {
             </p>
           </div>
           <div>
-            <SocketioIcon />
+            {theme == "dark" ? <DarkSocketIo /> : <SocketioIcon />}
             <p className="font-normal text-lg text-gray-600 dark:text-gray-300">
-              Socket io
+              Socket IO
             </p>
           </div>
         </div>
-        <div className="flex flex-wrap justify-between">
+        <div className="flex flex-wrap gap-16 justify-around lg:justify-between">
           {/* <Image src={Postgresql} /> */}
           <div>
             <MongoDBIcon />
@@ -92,7 +97,7 @@ const Skills = () => {
             </p>
           </div>
           <div>
-            <CypressIcon />
+            {theme == "dark" ? <DarkCypressIcon /> : <CypressIcon />}
             <p className="font-normal text-lg text-gray-600 dark:text-gray-300">
               Cypress
             </p>

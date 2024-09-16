@@ -7,10 +7,10 @@ const AboutMe = () => {
       <div className=" flex flex-col gap-6 lg:gap-12 lg:px-8">
         <Container tagTitle="About me" />
         <div className="flex flex-col lg:flex-row gap-12">
-          <div className="w-[584px]">
+          <div className="lg:w-[584px]">
             <AboutPic />
           </div>
-          <div className="w-[584px] flex flex-col gap-6">
+          <div className="lg:w-[584px] flex flex-col gap-6">
             <h1 className="font-semibold text-3xl text-gray-900 dark:text-gray-50">
               Curious about me? Here you have it:
             </h1>

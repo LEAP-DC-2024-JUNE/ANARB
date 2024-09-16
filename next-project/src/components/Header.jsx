@@ -1,5 +1,6 @@
 import Icon from "../svg/icon";
 import { useTheme } from "next-themes";
+import HamburgerMenuIcon from "../components/HamburgerMenuIcon";
 
 const Header = () => {
   const { setTheme, theme } = useTheme();
@@ -12,11 +13,14 @@ const Header = () => {
     }
   };
   return (
-    <div className="w-full px-20 py-4 bg-gray flex justify-between border-b-2 dark:bg-gray-950 dark:border-gray-950">
+    <div className="w-full p-4 border-b-[1px] lg:px-20 lg:py-4 bg-gray flex lg:justify-between lg:border-b-2 dark:bg-gray-950 dark:border-gray-950">
       <span className=" font-mono font-normal text-3xl text-gray-900 dark:text-white">
         ANAR
       </span>
-      <div className="flex gap-6 font-medium text-base items-center text-gray-600 dark:text-white">
+      <div className="lg:invisible">
+        <HamburgerMenuIcon />
+      </div>
+      <div className="flex gap-6 font-medium text-base items-center invisible text-gray-600 lg:visible dark:text-white">
         <span>About</span>
         <span>Work</span>
         <span>Testimonials</span>

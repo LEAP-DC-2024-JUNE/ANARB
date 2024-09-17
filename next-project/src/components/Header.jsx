@@ -2,6 +2,7 @@ import Icon from "../svg/icon";
 import { useTheme } from "next-themes";
 import HamburgerMenuIcon from "../components/HamburgerMenuIcon";
 import { DarkModeIcon } from "../svg/DarkModeIcon";
+import Navigation from "../components/Navigation";
 
 const Header = () => {
   const { setTheme, theme } = useTheme();
@@ -14,7 +15,23 @@ const Header = () => {
     }
   };
   return (
-    <div className="w-full p-4 border-b-[1px] lg:px-20 lg:py-4 bg-gray flex lg:justify-between lg:border-b-2 dark:bg-gray-950 dark:border-gray-950">
+    <div className="p-4 border-b-[1px] bg-white dark:bg-gray-950 dark:border-gray-950 lg:px-20 lg:py-4">
+      <div className="flex justify-between lg:px-8">
+        <div className="font-mono font-normal text-3xl text-gray-900 dark:text-white">
+          ANAR
+        </div>
+        <div>
+          {/* <Navigation /> */}
+          <HamburgerMenuIcon />
+        </div>
+      </div>
+    </div>
+  );
+};
+export default Header;
+
+{
+  /* <div className="w-full p-4 border-b-[1px] lg:px-20 lg:py-4 bg-gray flex justify-between lg:justify-between lg:border-b-2 dark:bg-gray-950 dark:border-gray-950">
       <div className="flex gap-72">
         <span className=" font-mono font-normal text-3xl text-gray-900 dark:text-white">
           ANAR
@@ -28,14 +45,12 @@ const Header = () => {
         <span>Work</span>
         <span>Testimonials</span>
         <span>Contact</span>
-        <button onClick={toggleTheme}>
+        <div className="cursor-pointer" onClick={toggleTheme}>
           {theme == "dark" ? <Icon /> : <DarkModeIcon />}
-        </button>
+        </div>
         <button className="rounded-xl bg-gray-900 text-gray-50 font-medium text-base px-4 py-[6px] dark:bg-gray-50 dark:text-gray-900">
           Download CV
         </button>
       </div>
-    </div>
-  );
-};
-export default Header;
+    </div> */
+}

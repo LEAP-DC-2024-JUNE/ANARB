@@ -8,7 +8,7 @@ export const WorkProject = (props) => {
   if (reverse === true) {
     return (
       <div className="flex flex-col  lg:flex-row-reverse rounded-xl drop-shadow-md bg-white">
-        <div className="p-12 border-r  bg-gray-50 lg:w-[576px] dark:bg-gray-700 dark:border-gray-700">
+        <div className="p-12 border-r  bg-gray-50 lg:w-[576px]  dark:bg-gray-700 dark:border-gray-700">
           <Image src={imgSrc} />
         </div>
         <div className="flex flex-col gap-6 p-12 lg:w-[576px] dark:bg-gray-800">

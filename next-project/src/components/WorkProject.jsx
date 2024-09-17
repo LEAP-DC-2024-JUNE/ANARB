@@ -7,7 +7,7 @@ export const WorkProject = (props) => {
   const { theme } = useTheme();
   if (reverse === true) {
     return (
-      <div className="flex flex-col  lg:flex-row-reverse rounded-xl drop-shadow-md bg-white">
+      <div className="flex flex-col  lg:flex-row-reverse rounded-xl drop-shadow-md bg-white dark:drop-shadow-2xl">
         <div className="p-12 border-r  bg-gray-50 lg:w-[576px]  dark:bg-gray-700 dark:border-gray-700">
           <Image src={imgSrc} />
         </div>
@@ -33,11 +33,11 @@ export const WorkProject = (props) => {
     );
   } else
     return (
-      <div className="flex flex-col rounded-xl drop-shadow-md bg-white lg:flex-row">
+      <div className="flex flex-col rounded-xl drop-shadow-md bg-white lg:flex-row dark:drop-shadow-2xl">
         <div className="p-12 border-r rounded-tl-xl bg-gray-50 lg:w-[576px] dark:bg-gray-700 dark:border-gray-700">
           <Image src={imgSrc} />
         </div>
-        <div className="flex flex-col gap-6 p-8 lg:p-12 lg:w-[576px] dark:bg-gray-800">
+        <div className="flex flex-col gap-6 p-8 lg:p-12 lg:w-[576px] dark:bg-gray-800 dark:drop-shadow-2xl">
           <div className="font-semibold text-xl text-gray-900 dark:text-gray-50">
             {title}
           </div>

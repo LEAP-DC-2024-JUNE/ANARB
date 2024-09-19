@@ -6,18 +6,27 @@ const Assignment4 = () => {
     { name: "Phone", price: 800, available: false },
     { name: "Tablet", price: 400, available: true },
   ];
-  const [availableProduct, setAvailableProduct] = useState;
+  const [availableProduct, setAvailableProduct] = useState(true);
   const filterAvailable = products.filter((element) => {
-    return element.available == true;
+    return element.available == availableProduct;
   });
-  const handleClick = () => {
-    setAvailableProduct();
+  const handleClick = (param1) => {
+    setAvailableProduct(param1);
   };
   return (
     <div>
-      <p>New array containing only the products that are available:</p>
-      <button></button>
-      <button></button>
+      <button
+        className="border-2 bg-gray-500 p-4"
+        onClick={() => handleClick(true)}
+      >
+        Available
+      </button>
+      <button
+        className="border-2 bg-gray-500 p-4"
+        onClick={() => handleClick(false)}
+      >
+        Not available
+      </button>
       <div>
         {filterAvailable.map((product) => {
           return (

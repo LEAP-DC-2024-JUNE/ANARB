@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const Assignment3 = () => {
   const people = [
     { name: "John", age: 17 },
@@ -5,12 +7,30 @@ const Assignment3 = () => {
     { name: "Tom", age: 15 },
     { name: "Emma", age: 30 },
   ];
+  const [age, setAge] = useState(0);
   const filterByAge = people.filter((element) => {
-    return element.age >= 18;
+    return element.age >= age;
   });
+  const handleAge = (param1) => {
+    setAge(param1);
+  };
   return (
     <div>
-      <p>New array containing only the people who are 18 or older:</p>
+      <button className="border-2 bg-gray-500 p-4" onClick={() => handleAge(0)}>
+        All age
+      </button>
+      <button
+        className="border-2 bg-gray-500 p-4"
+        onClick={() => handleAge(16)}
+      >
+        16+
+      </button>
+      <button
+        className="border-2 bg-gray-500 p-4"
+        onClick={() => handleAge(21)}
+      >
+        21+
+      </button>
       <div>
         {filterByAge.map((person) => {
           return (

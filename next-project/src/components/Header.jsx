@@ -23,7 +23,7 @@ const Header = () => {
   };
   return (
     <div className="p-4 border-b-[1px] bg-white dark:bg-gray-950 dark:border-gray-950 lg:px-20 lg:py-4">
-      <div className="flex justify-between lg:px-8">
+      <div className="flex justify-between items-center lg:px-8">
         <div className="font-mono font-normal text-3xl text-gray-900 dark:text-white">
           ANAR
         </div>

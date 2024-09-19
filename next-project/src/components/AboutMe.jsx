@@ -39,9 +39,13 @@ const AboutMe = () => {
                 Finally, some quick bits about me.
               </p>
               <ul className="font-normal text-base text-gray-600 list-disc flex gap-2.5 dark:text-gray-300">
-                <li>B.E. in Computer Engineering</li>
-                <li>Avid learner</li>
-                <li>Full time freelancer</li>
+                <div className="flex-1 flex-col gap-2.5">
+                  <li>B.E. in Computer Engineering</li>
+                  <li>Full time freelancer</li>
+                </div>
+                <div className="flex-1 gap-2.5">
+                  <li>Avid learner</li>
+                </div>
               </ul>
               <p className="font-normal text-base text-gray-600 dark:text-gray-300">
                 One last thing, I'm available for freelance work, so feel free

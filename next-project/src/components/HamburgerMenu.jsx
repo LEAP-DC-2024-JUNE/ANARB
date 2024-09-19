@@ -2,7 +2,7 @@ import IconClose from "../svg/IconClose";
 import Icon from "../svg/icon";
 import { useTheme } from "next-themes";
 import { DarkModeIcon } from "../svg/DarkModeIcon";
-const HamburgerMenu = () => {
+const HamburgerMenu = ({ isOpen, setIsOpen }) => {
   const { setTheme, theme } = useTheme();
   console.log(theme);
   const toggleTheme = () => {
@@ -13,13 +13,18 @@ const HamburgerMenu = () => {
     }
   };
   return (
-    <div className="w-[320px]">
-      <div>
+    <div className="bg-gray-900 bg-opacity-90 fixed top-0 left-0 w-screen h-screen">
+      <div className="w-[320px] fixed top-0 right-0 dark:bg-gray-950 bg-white h-screen">
         <div className="flex justify-between border-b-[1px] items-center p-4 dark:border-gray-800 border-gray-100">
           <div className="font-mono font-normal text-3xl text-gray-900 dark:text-white">
             ANAR
           </div>
-          <div className="cursor-pointer">
+          <div
+            className="cursor-pointer"
+            onClick={() => {
+              setIsOpen(!isOpen);
+            }}
+          >
             <IconClose />
           </div>
         </div>
@@ -47,7 +52,7 @@ const HamburgerMenu = () => {
             </div>
           </div>
           <div>
-            <button className="rounded-xl bg-gray-900 text-gray-50 font-medium text-base px-4 py-[6px] cursor-pointer dark:bg-gray-50 dark:text-gray-900">
+            <button className="rounded-xl bg-gray-900 text-gray-50 font-medium text-base px-4 py-[6px] cursor-pointer w-full dark:bg-gray-50 dark:text-gray-900">
               Download CV
             </button>
           </div>

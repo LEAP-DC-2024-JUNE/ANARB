@@ -9,6 +9,7 @@ import HamburgerMenu from "../components/HamburgerMenu";
 const Header = () => {
   const { setTheme, theme } = useTheme();
   const [menu, setMenu] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   console.log(theme);
   const toggleTheme = () => {
     if (theme == "dark") {
@@ -26,11 +27,20 @@ const Header = () => {
         <div className="font-mono font-normal text-3xl text-gray-900 dark:text-white">
           ANAR
         </div>
-        <div className="cursor-pointer" onClick={toggleMenu}>
-          {/* <Navigation /> */}
-          {menu == true ? <HamburgerMenuIcon /> : <HamburgerMenu />}
+        <div className="cursor-pointer hidden lg:flex" onClick={toggleMenu}>
+          <Navigation />
+          {/* {menu == true ? <HamburgerMenuIcon /> : <HamburgerMenu />} */}
+        </div>
+        <div
+          className="cursor-pointer lg:hidden"
+          onClick={() => {
+            setIsOpen(!isOpen);
+          }}
+        >
+          <HamburgerMenuIcon />
         </div>
       </div>
+      {isOpen && <HamburgerMenu isOpen={isOpen} setIsOpen={setIsOpen} />}
     </div>
   );
 };

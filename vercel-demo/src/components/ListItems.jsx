@@ -5,8 +5,8 @@ const ListItems = (props) => {
       {items.length == 0 && <div>No Items Available</div>}
       {items.length > 0 && (
         <div className="flex gap-4">
-          {items.map((item) => {
-            return <span>{item}</span>;
+          {items.map((item, index) => {
+            return <span key={index}>{item}</span>;
           })}
         </div>
       )}

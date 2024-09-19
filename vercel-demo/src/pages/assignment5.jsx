@@ -42,9 +42,9 @@ const Assignment5 = () => {
         80+
       </button>
       <div>
-        {filterPassingStudents.map((student) => {
+        {filterPassingStudents.map((student, index) => {
           return (
-            <div>
+            <div key={index}>
               <div>{student.name}</div>
               <div>{student.grade}</div>
             </div>

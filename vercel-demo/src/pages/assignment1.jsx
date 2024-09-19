@@ -21,8 +21,8 @@ const Assignment1 = () => {
       <button className="border-2 bg-slate-500" onClick={handleOdd}>
         Odd
       </button>
-      {filterEvenNumbers.map((number) => {
-        return <p>{number}</p>;
+      {filterEvenNumbers.map((number, index) => {
+        return <p key={index}>{number}</p>;
       })}
     </div>
   );

@@ -28,9 +28,9 @@ const Assignment4 = () => {
         Not available
       </button>
       <div>
-        {filterAvailable.map((product) => {
+        {filterAvailable.map((product, index) => {
           return (
-            <div>
+            <div key={index}>
               <div>{product.name}</div>
               <div>{product.price}</div>
             </div>

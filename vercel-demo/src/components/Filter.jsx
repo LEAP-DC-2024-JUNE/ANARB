@@ -40,9 +40,9 @@ const Filter = () => {
         Buh nasniihan
       </button>
       <div>
-        {filteredArray.map((person) => {
+        {filteredArray.map((person, index) => {
           return (
-            <div>
+            <div key={index}>
               <span>{person.name}</span>
               <span>{person.age}</span>
             </div>

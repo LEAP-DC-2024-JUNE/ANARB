@@ -32,9 +32,9 @@ const Assignment3 = () => {
         21+
       </button>
       <div>
-        {filterByAge.map((person) => {
+        {filterByAge.map((person, index) => {
           return (
-            <div>
+            <div key={index}>
               <span>{person.name}</span>
               <span>{person.age}</span>
             </div>

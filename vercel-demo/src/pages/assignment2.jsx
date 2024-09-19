@@ -36,8 +36,8 @@ const Assignment2 = () => {
         5
       </button>
       <div>
-        {filterByLength.map((item) => {
-          return <div>{item}</div>;
+        {filterByLength.map((item, index) => {
+          return <div key={index}>{item}</div>;
         })}
       </div>
     </div>

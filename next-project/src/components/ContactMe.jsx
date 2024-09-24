@@ -1,7 +1,7 @@
 import { useTheme } from "next-themes";
 import { Chip } from "./Chip";
 import { Social } from "../components/Social";
-import EmailIcon from "../svg/contact/Emailicon";
+import EmailIcon from "../svg/contact/EmailIcon";
 import CopyIcon from "../svg/contact/CopyIcon";
 import PhoneIcon from "../svg/contact/PhoneIcon";
 import DarkEmailIcon from "../svg/contact/DarkEmailIcon";

@@ -2,6 +2,9 @@ import { useTheme } from "next-themes";
 import { Chip } from "./Chip";
 import Image from "next/image";
 import Skill from "../components/Skill";
+import Postgresql from "../../public/postgresql.png";
+import Nextjs from "../../public/nextjs.png";
+import Tailwindcss from "../../public/tailwindcss.png";
 import JavascriptIcon from "../svg/skills/JavascriptIcon";
 import TypescriptIcon from "../svg/skills/TypescriptIcon";
 import ReactIcon from "../svg/skills/ReactIcon";
@@ -11,16 +14,31 @@ import NestjsIcon from "../svg/skills/NestJsIcon";
 import SocketioIcon from "../svg/skills/SocketIoIcon";
 import MongoDBIcon from "../svg/skills/MongoDbIcon";
 import SassIcon from "../svg/skills/SassIcon";
-import FigmaaIcon from "../svg/skills/FigmaIcon";
+import FigmaIcon from "../svg/skills/FigmaIcon";
 import CypressIcon from "../svg/skills/CypressIcon";
 import StorybookIcon from "../svg/skills/StorybookIcon";
 import GitIcon from "../svg/skills/GitIcon";
-import Nextjs from "../../public/nextjs.png";
-import Postgresql from "../../public/postgresql.png";
-import Tailwindcss from "../../public/tailwindcss.png";
 import DarkExpressJsIcon from "../svg/skills/DarkExpressJsIcon";
 import DarkSocketIo from "@/svg/skills/DarkSocketIO";
 import DarkCypressIcon from "@/svg/skills/DarkCypressIcon";
+// import {
+//   JavascriptIcon,
+//   TypescriptIcon,
+//   ReactIcon,
+//   NodejsIcon,
+//   ExpressjsIcon,
+//   NestjsIcon,
+//   SocketioIcon,
+//   MongoDBIcon,
+//   SassIcon,
+//   FigmaIcon,
+//   CypressIcon,
+//   StorybookIcon,
+//   GitIcon,
+//   DarkExpressJsIcon,
+//   DarkSocketIo,
+//   DarkCypressIcon,
+// } from "@/svg/skills";
 
 const Skills = () => {
   const { theme } = useTheme();
@@ -75,7 +93,7 @@ const Skills = () => {
       iconName: "Tailwind CSS",
     },
     {
-      icon: <FigmaaIcon />,
+      icon: <FigmaIcon />,
       iconName: "Figma",
     },
     {

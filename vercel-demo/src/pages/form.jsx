@@ -8,6 +8,7 @@ const Form = () => {
   const [zip, setZip] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
+  const [membership, setMembership] = useState("");
 
   const handleFirstName = (param1) => {
     setFirstName(param1);
@@ -30,8 +31,20 @@ const Form = () => {
   const handleEmail = (param1) => {
     setEmail(param1);
   };
+  const handleMembership = (param1) => {
+    setMembership(param1);
+  };
   const submitButton = () => {
-    console.log(firstName, lastName, address, city, zip, phone, email);
+    console.log(
+      firstName,
+      lastName,
+      address,
+      city,
+      zip,
+      phone,
+      email,
+      membership
+    );
   };
   return (
     <div className="px-[420px] py-12 flex flex-col gap-6">
@@ -172,7 +185,10 @@ const Form = () => {
                 <input
                   className="border-2 text-white"
                   type="radio"
+                  name="membershipType"
                   id="Standard"
+                  value={"Standard"}
+                  onChange={(event) => handleMembership(event.target.value)}
                 />
                 <label htmlFor="Standard">Standard</label>
               </div>
@@ -180,7 +196,10 @@ const Form = () => {
                 <input
                   className="border-2 text-white"
                   type="radio"
+                  name="membershipType"
                   id="Premium"
+                  value={"Premium"}
+                  onChange={(event) => handleMembership(event.target.value)}
                 />
                 <label htmlFor="Premium">Premium</label>
               </div>
@@ -188,7 +207,10 @@ const Form = () => {
                 <input
                   className="border-2 text-white"
                   type="radio"
+                  name="membershipType"
                   id="Ultimate"
+                  value={"Ultimate"}
+                  onChange={(event) => handleMembership(event.target.value)}
                 />
                 <label htmlFor="Ultimate">Ultimate</label>
               </div>

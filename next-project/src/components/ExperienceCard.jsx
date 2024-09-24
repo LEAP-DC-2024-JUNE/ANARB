@@ -9,12 +9,12 @@ export const ExperienceCard = (props) => {
         <div>
           <Image src={imgSrc} />
         </div>
-        <div className="flex flex-col-reverse gap-4 lg:flex-row">
+        <div className="flex flex-col-reverse gap-4 lg:flex-row lg:justify-between">
           <div className="flex flex-col gap-4">
             <p className="font-semibold text-xl text-gray-900 dark:text-gray-50">
               {title}
             </p>
-            <ul className="font-normal text-base text-gray-600 flex flex-col gap-1 list-disc dark:text-gray-300">
+            <ul className="font-normal text-base text-gray-600 flex flex-col gap-1 list-disc list-inside dark:text-gray-300">
               {descriptions.map((description) => {
                 return <li>{description}</li>;
               })}

@@ -1,4 +1,4 @@
-import AboutPic from "@/svg/AboutPic";
+import AboutPic from "@/svg/hero/AboutPic";
 import { Chip } from "./Chip";
 
 const AboutMe = () => {
@@ -38,15 +38,21 @@ const AboutMe = () => {
               <p className="font-normal text-base text-gray-600 dark:text-gray-300">
                 Finally, some quick bits about me.
               </p>
-              <ul className="font-normal text-base text-gray-600 list-disc flex gap-2.5 dark:text-gray-300">
-                <div className="flex-1 flex-col gap-2.5">
-                  <li>B.E. in Computer Engineering</li>
-                  <li>Full time freelancer</li>
+              <div className="justify-start items-start gap-2.5 inline-flex">
+                <div className="grow shrink basis-0 flex-col justify-start items-start gap-2.5 inline-flex">
+                  <li className="self-stretch text-gray-600 dark:text-gray-300 text-base font-normal leading-normal">
+                    B.E. in Computer Engineering
+                  </li>
+                  <li className="self-stretch text-gray-600 text-base font-normal leading-normal dark:text-gray-300">
+                    Full time freelancer
+                  </li>
                 </div>
-                <div className="flex-1 gap-2.5">
-                  <li>Avid learner</li>
+                <div className="grow shrink basis-0 flex-col justify-start items-start gap-2.5 inline-flex dark:text-gray-300">
+                  <li className="self-stretch text-gray-600 dark:text-gray-300 text-base font-normal leading-normal">
+                    Avid learner
+                  </li>
                 </div>
-              </ul>
+              </div>
               <p className="font-normal text-base text-gray-600 dark:text-gray-300">
                 One last thing, I'm available for freelance work, so feel free
                 to reach out and say hello! I promise I don't bite 😉

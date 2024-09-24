@@ -1,6 +1,6 @@
 import Image from "next/image";
-import IconButton from "../svg/IconButton";
-import DarkIconButton from "@/svg/DarkIconButton";
+import IconButton from "../svg/work/IconButton";
+import DarkIconButton from "../svg/work/DarkIconButton";
 import { useTheme } from "next-themes";
 
 export const WorkProject = (props) => {

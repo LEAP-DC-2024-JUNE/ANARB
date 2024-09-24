@@ -10,8 +10,8 @@ const Hero = () => {
 
   return (
     <div className="w-full px-4 py-16 lg:px-20 lg:py-24 bg-white dark:bg-gray-950">
-      <div className=" flex flex-col-reverse items-center gap-12 lg:flex-row lg:px-8 lg:justify-between">
-        <div className="flex flex-col gap-12 lg:w-[600px]">
+      <div className=" flex flex-col-reverse items-center gap-12 lg:flex-row lg:px-8 justify-between">
+        <div className="flex flex-col gap-12 lg:flex-1">
           <div className="flex flex-col gap-12 lg:gap-2">
             <h1 className=" font-bold text-6xl text-gray-900 dark:text-white">
               Hi, I'm Anar👋
@@ -40,7 +40,7 @@ const Hero = () => {
           </div>
           <Social />
         </div>
-        <div>
+        <div className="flex lg:flex-1 flex-col lg:items-end">
           <HeroPic />
         </div>
       </div>

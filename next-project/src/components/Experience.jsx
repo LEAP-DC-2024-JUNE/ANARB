@@ -1,6 +1,6 @@
 import { Chip } from "./Chip";
 import { ExperienceCard } from "./ExperienceCard";
-import Upwork from "../svg/UpworkLogo.png";
+import Upwork from "../../public/UpworkLogo.png";
 
 const Experience = () => {
   const experiences = [

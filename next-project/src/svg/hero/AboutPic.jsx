@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Test from "../../public/AboutMePic.png";
+import Test from "../../../public/AboutMePic.png";
 
 function AboutPic() {
   return <Image src={Test} />;

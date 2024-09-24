@@ -2,9 +2,11 @@ import { Fragment, useState, useEffect } from "react";
 
 const Footer = () => {
   const [year, setYear] = useState(new Date().getFullYear());
+
   useEffect(() => {
     setYear(new Date().getFullYear());
   }, []);
+
   return (
     <Fragment>
       <div className="w-full px-20 py-6 bg-gray-50 dark:bg-gray-900">

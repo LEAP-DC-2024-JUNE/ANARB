@@ -6,6 +6,7 @@ import { useTheme } from "next-themes";
 export const WorkProject = (props) => {
   const { title, description, imgSrc, tags, reverse } = props;
   const { theme } = useTheme();
+
   if (reverse === true) {
     return (
       <div className="flex flex-col  lg:flex-row-reverse drop-shadow-md rounded-xl bg-white dark:bg-gray-950 dark:drop-shadow-2xl">

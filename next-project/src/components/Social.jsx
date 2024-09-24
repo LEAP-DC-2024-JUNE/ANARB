@@ -1,13 +1,14 @@
 import { useTheme } from "next-themes";
-import GithubIcon from "../svg/social/Github-icon";
-import TwitterIcon from "../svg/Twitter-icon";
-import FigmaIcon from "../svg/Figma-icon";
-import DarkGitHubIcon from "@/svg/DarkGitHubIcon";
-import DarkTwitterIcon from "@/svg/DarkTwitterIcon";
-import DarkFigmaIcon from "../svg/DarkFigmaIcon";
+import GithubIcon from "../svg/social/GithubIcon";
+import TwitterIcon from "../svg/social/TwitterIcon";
+import FigmaIcon from "../svg/social/FigmaIcon";
+import DarkGitHubIcon from "../svg/social/DarkGitHubIcon";
+import DarkTwitterIcon from "@/svg/social/DarkTwitterIcon";
+import DarkFigmaIcon from "../svg/social/DarkFigmaIcon";
 
 export const Social = () => {
   const { theme } = useTheme();
+
   return (
     <div className="flex gap-1">
       {theme == "dark" ? <DarkGitHubIcon /> : <GithubIcon />}

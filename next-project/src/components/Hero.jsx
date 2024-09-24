@@ -1,11 +1,13 @@
-import LocationIcon from "../svg/location-icon";
-import AvailableIcon from "../svg/available-icon";
-import HeroPic from "@/svg/HeroPic";
-import { Social } from "../components/Social";
-import DarkLocationIcon from "@/svg/DarkLocationIcon";
 import { useTheme } from "next-themes";
+import { Social } from "../components/Social";
+import LocationIcon from "../svg/hero/LocationIcon";
+import AvailableIcon from "../svg/hero/AvailableIcon";
+import DarkLocationIcon from "@/svg/hero/DarkLocationIcon";
+import HeroPic from "../svg/hero/HeroPic";
+
 const Hero = () => {
   const { theme } = useTheme();
+
   return (
     <div className="w-full px-4 py-16 lg:px-20 lg:py-24 bg-white dark:bg-gray-950">
       <div className=" flex flex-col-reverse items-center gap-12 lg:flex-row lg:px-8 lg:justify-between">

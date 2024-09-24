@@ -1,29 +1,30 @@
-import JavascriptIcon from "../svg/Javascript-icon";
-import TypescriptIcon from "../svg/Typescript-icon";
-import ReactIcon from "../svg/React-icon";
-import NodejsIcon from "../svg/Nodejs-icon";
-import ExpressjsIcon from "../svg/Expressjs-icon";
-import NestjsIcon from "../svg/Nestjs-icon";
-import SocketioIcon from "../svg/Socketio-icon";
-import MongoDBIcon from "../svg/MongoDB-icon";
-import SassIcon from "../svg/Sass-icon";
-import FigmaaIcon from "../svg/FigmaIcon";
-import CypressIcon from "../svg/CypressIcon";
-import StorybookIcon from "../svg/StorybookIcon";
-import GitIcon from "../svg/GitIcon";
+import { useTheme } from "next-themes";
+import { Chip } from "./Chip";
 import Image from "next/image";
+import Skill from "../components/Skill";
+import JavascriptIcon from "../svg/skills/JavascriptIcon";
+import TypescriptIcon from "../svg/skills/TypescriptIcon";
+import ReactIcon from "../svg/skills/ReactIcon";
+import NodejsIcon from "../svg/skills/NodeJsIcon";
+import ExpressjsIcon from "../svg/skills/ExpressJsIcon";
+import NestjsIcon from "../svg/skills/NestJsIcon";
+import SocketioIcon from "../svg/skills/SocketIoIcon";
+import MongoDBIcon from "../svg/skills/MongoDbIcon";
+import SassIcon from "../svg/skills/SassIcon";
+import FigmaaIcon from "../svg/skills/FigmaIcon";
+import CypressIcon from "../svg/skills/CypressIcon";
+import StorybookIcon from "../svg/skills/StorybookIcon";
+import GitIcon from "../svg/skills/GitIcon";
 import Nextjs from "../../public/nextjs.png";
 import Postgresql from "../../public/postgresql.png";
 import Tailwindcss from "../../public/tailwindcss.png";
-import { Chip } from "./Chip";
-import DarkExpressJsIcon from "../svg/DarkExpressJsIcon";
-import { useTheme } from "next-themes";
-import DarkSocketIo from "@/svg/DarkSocketIO";
-import DarkCypressIcon from "@/svg/DarkCypressIcon";
-import Skill from "../components/Skill";
+import DarkExpressJsIcon from "../svg/skills/DarkExpressJsIcon";
+import DarkSocketIo from "@/svg/skills/DarkSocketIO";
+import DarkCypressIcon from "@/svg/skills/DarkCypressIcon";
 
 const Skills = () => {
   const { theme } = useTheme();
+
   const skills = [
     {
       icon: <JavascriptIcon />,
@@ -90,6 +91,7 @@ const Skills = () => {
       iconName: "Git",
     },
   ];
+
   return (
     <div className="w-full px-4 py-16 lg:px-20 lg:py-24 bg-gray flex flex-col gap-12 dark:bg-gray-950">
       <Chip

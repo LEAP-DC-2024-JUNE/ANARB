@@ -1,6 +1,8 @@
 import Image from "next/image";
+
 export const ExperienceCard = (props) => {
   const { title, descriptions, imgSrc, timeline } = props;
+
   return (
     <div className="rounded-xl p-8 drop-shadow-md bg-white dark:bg-gray-800">
       <div className="flex flex-col gap-4 justify-between lg:flex-row lg:gap-12">

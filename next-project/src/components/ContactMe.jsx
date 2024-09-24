@@ -1,15 +1,16 @@
-import EmailIcon from "@/svg/Emailicon";
-import CopyIcon from "../svg/CopyIcon";
-import PhoneIcon from "../svg/PhoneIcon";
-import { Social } from "../components/Social";
-import { Chip } from "./Chip";
 import { useTheme } from "next-themes";
-import DarkEmailIcon from "../svg/DarkEmailIcon";
-import DarkCopyIcon from "../svg/DarkCopyIcon";
-import DarkPhoneIcon from "../svg/DarkPhoneIcon";
+import { Chip } from "./Chip";
+import { Social } from "../components/Social";
+import EmailIcon from "../svg/contact/Emailicon";
+import CopyIcon from "../svg/contact/CopyIcon";
+import PhoneIcon from "../svg/contact/PhoneIcon";
+import DarkEmailIcon from "../svg/contact/DarkEmailIcon";
+import DarkCopyIcon from "../svg/contact/DarkCopyIcon";
+import DarkPhoneIcon from "../svg/contact/DarkPhoneIcon";
 
 const ContactMe = () => {
   const { theme } = useTheme();
+
   return (
     <div className="w-full px-4 py-16 bg-gray flex lg:justify-center lg:px-20 lg:py-24 dark:bg-gray-950">
       <div className="flex flex-col gap-6 lg:gap-12 lg:px-8">

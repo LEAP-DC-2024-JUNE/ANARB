@@ -1,16 +1,14 @@
-import Icon from "../svg/icon";
 import { useTheme } from "next-themes";
-import HamburgerMenuIcon from "../svg/header/HamburgerMenuIcon";
-import { DarkModeIcon } from "../svg/DarkModeIcon";
-import Navigation from "../components/Navigation";
 import { useState } from "react";
+import Navigation from "../components/Navigation";
 import HamburgerMenu from "../components/HamburgerMenu";
+import HamburgerMenuIcon from "../svg/header/HamburgerMenuIcon";
 
 const Header = () => {
   const { setTheme, theme } = useTheme();
   const [menu, setMenu] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
-  console.log(theme);
+
   const toggleTheme = () => {
     if (theme == "dark") {
       setTheme("light");
@@ -18,6 +16,7 @@ const Header = () => {
       setTheme("dark");
     }
   };
+
   const toggleMenu = () => {
     setMenu(!menu);
   };

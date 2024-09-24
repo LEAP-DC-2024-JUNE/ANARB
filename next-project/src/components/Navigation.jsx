@@ -1,12 +1,12 @@
 import { useTheme } from "next-themes";
-import Icon from "../svg/icon";
-import { DarkModeIcon } from "../svg/DarkModeIcon";
+import Icon from "../svg/header/icon";
+import { DarkModeIcon } from "../svg/header/DarkModeIcon";
 import { useState, useEffect } from "react";
 
 const Navigation = () => {
   const { setTheme, theme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  console.log(theme);
+
   const toggleTheme = () => {
     if (theme == "dark") {
       setTheme("light");
@@ -14,12 +14,14 @@ const Navigation = () => {
       setTheme("dark");
     }
   };
+
   useEffect(() => {
     setMounted(true);
   }, []);
   if (!mounted) {
     return null;
   }
+
   return (
     <div className="flex gap-6 items-center">
       <div className="font-medium text-base text-gray-600 dark:text-white">

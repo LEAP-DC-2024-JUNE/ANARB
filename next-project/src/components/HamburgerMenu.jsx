@@ -1,10 +1,11 @@
-import IconClose from "../svg/IconClose";
-import Icon from "../svg/icon";
 import { useTheme } from "next-themes";
-import { DarkModeIcon } from "../svg/DarkModeIcon";
+import { DarkModeIcon } from "../svg/header/DarkModeIcon";
+import IconClose from "../svg/header/IconClose";
+import Icon from "../svg/header/icon";
+
 const HamburgerMenu = ({ isOpen, setIsOpen }) => {
   const { setTheme, theme } = useTheme();
-  console.log(theme);
+
   const toggleTheme = () => {
     if (theme == "dark") {
       setTheme("light");
@@ -12,6 +13,7 @@ const HamburgerMenu = ({ isOpen, setIsOpen }) => {
       setTheme("dark");
     }
   };
+
   return (
     <div className="bg-gray-900 bg-opacity-90 fixed top-0 left-0 w-screen h-screen">
       <div className="w-[320px] fixed top-0 right-0 dark:bg-gray-950 bg-white h-screen">

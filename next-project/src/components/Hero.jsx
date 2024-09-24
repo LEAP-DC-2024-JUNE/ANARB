@@ -38,7 +38,7 @@ const Hero = () => {
           </div>
           <Social />
         </div>
-        <div className="">
+        <div>
           <HeroPic />
         </div>
       </div>

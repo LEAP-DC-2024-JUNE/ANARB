@@ -1,5 +1,5 @@
 import Image from "next/image";
-export const Cardd = (props) => {
+export const ExperienceCard = (props) => {
   const { title, descriptions, imgSrc, timeline } = props;
   return (
     <div className="rounded-xl p-8 drop-shadow-md bg-white dark:bg-gray-800">

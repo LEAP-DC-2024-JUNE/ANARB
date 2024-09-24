@@ -1,8 +1,8 @@
-import GithubIcon from "../svg/Github-icon";
+import { useTheme } from "next-themes";
+import GithubIcon from "../svg/social/Github-icon";
 import TwitterIcon from "../svg/Twitter-icon";
 import FigmaIcon from "../svg/Figma-icon";
 import DarkGitHubIcon from "@/svg/DarkGitHubIcon";
-import { useTheme } from "next-themes";
 import DarkTwitterIcon from "@/svg/DarkTwitterIcon";
 import DarkFigmaIcon from "../svg/DarkFigmaIcon";
 

@@ -2,6 +2,7 @@ import Image from "next/image";
 import IconButton from "../svg/IconButton";
 import DarkIconButton from "@/svg/DarkIconButton";
 import { useTheme } from "next-themes";
+
 export const WorkProject = (props) => {
   const { title, description, imgSrc, tags, reverse } = props;
   const { theme } = useTheme();

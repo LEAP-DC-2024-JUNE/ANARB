@@ -1,11 +1,11 @@
 import AboutPic from "@/svg/AboutPic";
-import { Container } from "../components/Container";
+import { Chip } from "./Chip";
 
 const AboutMe = () => {
   return (
     <div className="w-full px-4 py-16 lg:px-20 lg:py-24 bg-gray-50 dark:bg-gray-900">
       <div className=" flex flex-col gap-6 lg:gap-12 lg:px-8">
-        <Container tagTitle="About me" />
+        <Chip tagTitle="About me" />
         <div className="flex flex-col lg:flex-row gap-12">
           <div className="lg:w-[584px]">
             <AboutPic />

@@ -1,14 +1,15 @@
 export const Chip = (props) => {
-  const { title, description, color } = props;
-  console.log(`bg-${color}-500`);
+  const { tagTitle, subHeading } = props;
   return (
-    <div>
-      <p className={`bg-${color}-500`}>{title + description + color}</p>
+    <div className="flex flex-col gap-4">
+      <div className="text-center">
+        <span className="rounded-xl bg-gray-200 px-5 py-1 font-medium text-sm text-gray-600 dark:bg-gray-700 dark:text-gray-300">
+          {tagTitle}
+        </span>
+      </div>
+      <p className="font-normal text-xl text-gray-600 text-center dark:text-gray-300">
+        {subHeading}
+      </p>
     </div>
   );
 };
-
-// Object destructure
-// const object = {name: "Christina", age: 12};
-// const {name} = object;
-// console.log(name);

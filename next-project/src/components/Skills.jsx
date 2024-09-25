@@ -14,7 +14,7 @@ import NestjsIcon from "../svg/skills/NestJsIcon";
 import SocketioIcon from "../svg/skills/SocketIoIcon";
 import MongoDBIcon from "../svg/skills/MongoDbIcon";
 import SassIcon from "../svg/skills/SassIcon";
-import FigmaIcon from "../svg/skills/FigmaIcon";
+import FigmaaIcon from "../svg/skills/FigmaIcon";
 import CypressIcon from "../svg/skills/CypressIcon";
 import StorybookIcon from "../svg/skills/StorybookIcon";
 import GitIcon from "../svg/skills/GitIcon";
@@ -31,7 +31,7 @@ import DarkCypressIcon from "@/svg/skills/DarkCypressIcon";
 //   SocketioIcon,
 //   MongoDBIcon,
 //   SassIcon,
-//   FigmaIcon,
+//   FigmaaIcon,
 //   CypressIcon,
 //   StorybookIcon,
 //   GitIcon,
@@ -93,7 +93,7 @@ const Skills = () => {
       iconName: "Tailwind CSS",
     },
     {
-      icon: <FigmaIcon />,
+      icon: <FigmaaIcon />,
       iconName: "Figma",
     },
     {

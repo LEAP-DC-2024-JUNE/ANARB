@@ -6,7 +6,7 @@ export * from "./ExpressJsIcon";
 export * from "./FigmaIcon";
 export * from "./GitIcon";
 export * from "./JavascriptIcon";
-export * from "./MongoDbIcon";
+export * from "./MongoDBIcon";
 export * from "./NestJsIcon";
 export * from "./NodeJsIcon";
 export * from "./ReactIcon";

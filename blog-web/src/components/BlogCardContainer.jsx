@@ -1,10 +1,16 @@
 import { BlogCard } from "./BlogCard";
 
-export const BlogCardContainer = ({ articles }) => {
+export const BlogCardContainer = ({ articles, inputValue }) => {
+  const filteredArticle = articles.filter((article) => {
+    let lowerTitle = article.title.toLowerCase();
+    let lowerInputValue = inputValue.toLowerCase();
+    return lowerTitle.includes(lowerInputValue);
+  });
+
   return (
     <div>
       <div className="grid grid-cols-3 gap-3 px-[352px]">
-        {articles.map((article) => {
+        {filteredArticle.map((article) => {
           return (
             <div>
               <BlogCard

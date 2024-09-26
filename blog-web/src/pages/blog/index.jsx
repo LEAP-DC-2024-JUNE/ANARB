@@ -5,6 +5,7 @@ import { Footer } from "../../components/Footer";
 
 const Blog = () => {
   const [articles, setArticles] = useState([]);
+  const [inputValue, setInputValue] = useState("");
 
   const fetchData = () => {
     fetch("https://dev.to/api/articles")
@@ -15,16 +16,15 @@ const Blog = () => {
   useEffect(() => {
     fetchData();
   }, []);
-  console.log(articles);
 
   return (
     <div>
-      <Header />
+      <Header setInputValue={setInputValue} />
       <div className="px-[352px] p-6">
         <h1 className="font-bold text-2xl">All Blog Post</h1>
       </div>
       <div className="flex flex-col gap-20">
-        <BlogCardContainer articles={articles} />
+        <BlogCardContainer articles={articles} inputValue={inputValue} />
         <Footer />
       </div>
     </div>

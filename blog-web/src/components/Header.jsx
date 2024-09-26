@@ -3,7 +3,7 @@ import { MetaIcon } from "../icons/header/MetaIcon";
 import { BlogIcon } from "../icons/header/BlogIcon";
 import { SearchBar } from "../components/SearchBar";
 
-export const Header = () => {
+export const Header = ({ setInputValue }) => {
   return (
     <div>
       <div className="px-[350px] py-8">
@@ -22,7 +22,12 @@ export const Header = () => {
               <p>Contact</p>
             </div>
             <div>
-              <SearchBar />
+              <input
+                type="text"
+                className="rounded-md bg-zinc-100 py-1 pr-1 pl-2"
+                placeholder="Search"
+                onChange={(event) => setInputValue(event.target.value)}
+              />
             </div>
           </div>
         </div>

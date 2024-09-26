@@ -1,8 +1,7 @@
-import { BlogCard } from "../../components/BlogCard";
-import { BlogCardContainer } from "../../components/BlogCardContainer";
-import { Header } from "../../components/Header";
-import { Footer } from "../../components/Footer";
 import { useState, useEffect } from "react";
+import { Header } from "../../components/Header";
+import { BlogCardContainer } from "../../components/BlogCardContainer";
+import { Footer } from "../../components/Footer";
 
 const Blog = () => {
   const [articles, setArticles] = useState([]);
@@ -19,26 +18,15 @@ const Blog = () => {
   console.log(articles);
 
   return (
-    // <div className="grid grid-cols-3 gap-12">
-    //   {articles.map((article) => {
-    //     return (
-    //       <div>
-    //         <BlogCard
-    //           description={article.description}
-    //           tags={article.tags}
-    //           userName={article.user.name}
-    //           readable_published_date={article.readable_published_date}
-    //           img={article.social_image}
-    //           date={article.readable_publish_date}
-    //         />
-    //       </div>
-    //     );
-    //   })}
-    // </div>
     <div>
       <Header />
-      <BlogCardContainer />
-      <Footer />
+      <div className="px-[352px] p-6">
+        <h1 className="font-bold text-2xl">All Blog Post</h1>
+      </div>
+      <div className="flex flex-col gap-20">
+        <BlogCardContainer articles={articles} />
+        <Footer />
+      </div>
     </div>
   );
 };

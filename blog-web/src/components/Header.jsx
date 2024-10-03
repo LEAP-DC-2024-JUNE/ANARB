@@ -1,9 +1,8 @@
 import { UnionIcon } from "../icons/header/UnionIcon";
 import { MetaIcon } from "../icons/header/MetaIcon";
 import { BlogIcon } from "../icons/header/BlogIcon";
-import { SearchBar } from "../components/SearchBar";
-import Link from "next/link";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 export const Header = ({ setInputValue }) => {
   const router = useRouter();

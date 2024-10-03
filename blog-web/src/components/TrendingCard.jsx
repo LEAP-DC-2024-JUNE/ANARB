@@ -1,6 +1,3 @@
-import Image1 from "../../public/TrendingImage.png";
-import Image from "next/image";
-
 export const TrendingCard = ({ img, title, tags }) => {
   return (
     <div className="rounded-xl relative">

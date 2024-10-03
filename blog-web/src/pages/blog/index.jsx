@@ -8,12 +8,6 @@ const Blog = () => {
   const [inputValue, setInputValue] = useState("");
   const [blogPostLimit, setBlogPostLimit] = useState(9);
 
-  // const fetchData = () => {
-  //   fetch("https://dev.to/api/articles")
-  //     .then((response) => response.json())
-  //     .then((data) => setArticles(data));
-  // };
-
   const fetchData = (limit = blogPostLimit) => {
     fetch(`https://dev.to/api/articles?per_page=${limit}`)
       .then((response) => response.json())

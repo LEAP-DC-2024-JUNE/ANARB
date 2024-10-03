@@ -1,5 +1,3 @@
-import Image from "next/image";
-import ProfilePic from "../../public/ProfilePic.png";
 import Link from "next/link";
 
 export const BlogCard = ({
@@ -24,13 +22,8 @@ export const BlogCard = ({
             </span>
             <p className="font-semibold text-2xl text-slate-900">{title}</p>
           </div>
-          {/* <div className="flex gap-5">
-          <div className="font-medium text-base text-slate-500">{userName}</div>
-          <div className="font-normal text-base text-slate-500">{date}</div>
-        </div> */}
         </div>
         <div className="flex gap-5 items-center">
-          {/* <Image className="h-9" src={ProfilePic} /> */}
           <img src={profilePic} className="h-9 rounded-[24px]" />
           <div className="font-medium text-base text-slate-500">{userName}</div>
           <div className="font-normal text-base text-slate-500">{date}</div>

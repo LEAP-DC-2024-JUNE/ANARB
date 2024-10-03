@@ -1,10 +1,8 @@
-import { SliderBtnBack } from "@/icons/carousel/SliderBtnBack";
-import { SliderBtnForward } from "@/icons/carousel/SliderBtnForward";
-
 export const CarouselCard = ({ article }) => {
   if (!article) {
     return null;
   }
+
   return (
     <div className="px-[252px] pt-10 relative">
       <div className="rounded-xl">
@@ -26,10 +24,6 @@ export const CarouselCard = ({ article }) => {
           <p>{article.readable_publish_date}</p>
         </div>
       </div>
-      {/* <div className="flex gap-2">
-        <SliderBtnBack />
-        <SliderBtnForward />
-      </div> */}
     </div>
   );
 };

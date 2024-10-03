@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Header } from "../../components/Header";
 import { BlogCardContainer } from "../../components/BlogCardContainer";
 import { Footer } from "../../components/Footer";
+import Head from "next/head";
 
 const Blog = () => {
   const [articles, setArticles] = useState([]);
@@ -24,6 +25,9 @@ const Blog = () => {
 
   return (
     <div>
+      <Head>
+        <title>Meta Blog | Blog</title>
+      </Head>
       <Header setInputValue={setInputValue} />
       <div className="px-[252px] p-6">
         <h1 className="font-bold text-2xl">All Blog Post</h1>

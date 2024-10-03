@@ -1,10 +1,14 @@
 import { Header } from "@/components";
 import { Footer } from "@/components";
 import Link from "next/link";
+import Head from "next/head";
 
 const Custom404 = () => {
   return (
     <div>
+      <Head>
+        <title>Page Not Found | 404</title>
+      </Head>
       <Header />
       <div className="flex gap-10 px-[452px] py-[100px]">
         <div className="flex items-center">

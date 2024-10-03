@@ -17,25 +17,25 @@ export const Header = ({ setInputValue }) => {
               <BlogIcon />
             </div>
           </div>
-          <div className="flex gap-40 items-center">
-            <div className="flex gap-10 font-normal text-base">
-              <Link href="/">Home</Link>
-              <Link href="/blog">Blog</Link>
-              <Link href="/contact">Contact</Link>
-            </div>
-            <div>
-              {router.pathname == "/blog" ? (
-                <input
-                  type="text"
-                  className="rounded-md bg-zinc-100 py-1 pr-1 pl-2"
-                  placeholder="Search"
-                  onChange={(event) => setInputValue(event.target.value)}
-                />
-              ) : (
-                <></>
-              )}
-            </div>
+          {/* <div className="flex items-center"> */}
+          <div className="flex gap-10 font-normal text-base">
+            <Link href="/">Home</Link>
+            <Link href="/blog">Blog</Link>
+            <Link href="/contact">Contact</Link>
           </div>
+          <div>
+            {router.pathname == "/blog" ? (
+              <input
+                type="text"
+                className="rounded-md bg-zinc-100 py-1 pr-1 pl-2"
+                placeholder="Search"
+                onChange={(event) => setInputValue(event.target.value)}
+              />
+            ) : (
+              <></>
+            )}
+          </div>
+          {/* </div> */}
         </div>
       </div>
     </div>

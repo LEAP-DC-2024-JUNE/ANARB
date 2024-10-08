@@ -31,30 +31,30 @@ export const ContactUs = () => {
         <div className="pt-[29px] pl-[35px] flex flex-col gap-6">
           <p className="font-semibold text-lg">Leave a Message</p>
           <div className="flex flex-col gap-6">
-            <div className="flex gap-10">
+            <div className="flex gap-7">
               <input
                 type="text"
-                placeholder="Your Name"
-                className="border-[1px] rounded-[5px]"
+                placeholder="  Your Name"
+                className="border-[1px] rounded-[5px] w-[220px] h-[38px]"
               />
               <input
                 type="text"
-                placeholder="Your Email"
-                className="border-[1px] rounded-[5px]"
+                placeholder="  Your Email"
+                className="border-[1px] rounded-[5px] w-[220px] h-[38px]"
               />
             </div>
             <div>
               <input
                 type="text"
-                placeholder="Subject"
-                className="border-[1px] rounded-[5px]"
+                placeholder="  Subject"
+                className="border-[1px] rounded-[5px] w-[468px] h-[38px]"
               />
             </div>
             <div>
               <input
                 type="text"
                 placeholder="Write a Message"
-                className="border-[1px] rounded-[5px]"
+                className="border-[1px] rounded-[5px] w-[468px] h-[134px]"
               />
             </div>
             <button className="rounded-[6px] bg-indigo-500 text-white py-2.5 px-4 w-[140px]">

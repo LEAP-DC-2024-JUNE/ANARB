@@ -26,17 +26,17 @@ export default function Home() {
       .then((data) => setArticles(data));
   };
 
-  const fetchCarouselData = () => {
-    fetch(`https://dev.to/api/articles?per_page=3&state=fresh`)
-      .then((response) => response.json())
-      .then((data) => setCarouselArticles(data));
-  };
+  // const fetchCarouselData = () => {
+  //   fetch(`https://dev.to/api/articles?per_page=3&state=fresh`)
+  //     .then((response) => response.json())
+  //     .then((data) => setCarouselArticles(data));
+  // };
 
-  const fetchTrendingData = () => {
-    fetch(`https://dev.to/api/articles?per_page=4&tag=trending`)
-      .then((response) => response.json())
-      .then((data) => setTrendingArticles(data));
-  };
+  // const fetchTrendingData = () => {
+  //   fetch(`https://dev.to/api/articles?per_page=4&tag=trending`)
+  //     .then((response) => response.json())
+  //     .then((data) => setTrendingArticles(data));
+  // };
 
   const loadMore = () => {
     setBlogPostLimit(blogPostLimit + 3);
@@ -56,8 +56,8 @@ export default function Home() {
 
   useEffect(() => {
     fetchData(blogPostLimit);
-    fetchCarouselData();
-    fetchTrendingData();
+    // fetchCarouselData();
+    // fetchTrendingData();
   }, [blogPostLimit, tag]);
 
   return (

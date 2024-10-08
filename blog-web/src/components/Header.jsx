@@ -9,19 +9,27 @@ export const Header = ({ setInputValue }) => {
   return (
     <div>
       <div className="px-[252px] py-8">
-        <div className="flex justify-between">
-          <div className="flex items-center gap-1">
-            <UnionIcon />
-            <div className="flex">
-              <MetaIcon />
-              <BlogIcon />
+        <div className="flex gap-[190px]">
+          <Link href="/">
+            <div className="flex items-center gap-1">
+              <UnionIcon />
+              <div className="flex">
+                <MetaIcon />
+                <BlogIcon />
+              </div>
             </div>
-          </div>
+          </Link>
           {/* <div className="flex items-center"> */}
-          <div className="flex gap-10 font-normal text-base">
-            <Link href="/">Home</Link>
-            <Link href="/blog">Blog</Link>
-            <Link href="/contact">Contact</Link>
+          <div className="flex gap-10 font-normal text-base ">
+            <Link href="/" className="hover:text-slate-500">
+              Home
+            </Link>
+            <Link href="/blog" className="hover:text-slate-500">
+              Blog
+            </Link>
+            <Link href="/contact" className="hover:text-slate-500">
+              Contact
+            </Link>
           </div>
           <div>
             {router.pathname == "/blog" ? (

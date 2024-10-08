@@ -40,7 +40,7 @@ const SinglePost = () => {
         </div>
         <img src={singleArticle.social_image} />
         <div
-          className="font-normal text-xl text-[#3B3C4A]"
+          className="font-normal text-xl text-[#3B3C4A] text-wrap"
           dangerouslySetInnerHTML={{ __html: singleArticle.body_html }}
         ></div>
       </div>

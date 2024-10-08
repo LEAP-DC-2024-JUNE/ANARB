@@ -1,13 +1,22 @@
-export const CarouselCard = ({ article }) => {
-  if (!article) {
-    return null;
-  }
-
+import { useContext } from "react";
+import { MyContext } from "./context";
+export const CarouselCard = () => {
+  // if (!carouselArticles) {
+  //   return null;
+  // }
+  // const { count, setCount } = useContext(MyContext);
+  const { carouselArticles } = useContext(MyContext);
+  console.log(carouselArticles);
   return (
     <div className="px-[252px] pt-10 relative">
+      {/* <div>
+        <div>{count} ni iim bn shu</div>
+        <button onClick={() => setCount(count + 1)}>Nemeh +</button>
+        <button onClick={() => setCount(count - 1)}>Hasah -</button>
+      </div> */}
       <div className="rounded-xl">
         <img
-          src={article.social_image}
+          src={carouselArticles.social_image}
           width={1216}
           height={600}
           className="rounded-xl h-[500px] brightness-50"
@@ -18,10 +27,10 @@ export const CarouselCard = ({ article }) => {
           <span className="rounded-[6px] bg-indigo-500 text-white py-1 px-2.5 w-[100px]">
             Technology
           </span>
-          <p className="font-semibold text-4xl">{article.title}</p>
+          <p className="font-semibold text-4xl">{carouselArticles.title}</p>
         </div>
         <div>
-          <p>{article.readable_publish_date}</p>
+          <p>{carouselArticles.readable_publish_date}</p>
         </div>
       </div>
     </div>

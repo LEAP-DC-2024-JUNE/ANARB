@@ -6,6 +6,7 @@ export const CarouselCard = () => {
   // }
   // const { count, setCount } = useContext(MyContext);
   const { carouselArticles } = useContext(MyContext);
+  const { index } = useContext(MyContext);
   console.log(carouselArticles);
   return (
     <div className="px-[252px] pt-10 relative">
@@ -16,7 +17,7 @@ export const CarouselCard = () => {
       </div> */}
       <div className="rounded-xl">
         <img
-          src={carouselArticles.social_image}
+          src={carouselArticles[index]?.social_image}
           width={1216}
           height={600}
           className="rounded-xl h-[500px] brightness-50"
@@ -24,13 +25,13 @@ export const CarouselCard = () => {
       </div>
       <div className="bg-white rounded-xl border-[1px] p-10 flex flex-col gap-6 shadow-xl w-[598px] absolute left-[265px] bottom-5">
         <div className="flex flex-col gap-4">
-          <span className="rounded-[6px] bg-indigo-500 text-white py-1 px-2.5 w-[100px]">
-            Technology
-          </span>
-          <p className="font-semibold text-4xl">{carouselArticles.title}</p>
+          <span className="rounded-[6px] bg-indigo-500 text-white py-1 px-2.5 w-[100px]"></span>
+          <p className="font-semibold text-4xl">
+            {carouselArticles[index]?.title}
+          </p>
         </div>
         <div>
-          <p>{carouselArticles.readable_publish_date}</p>
+          <p>{carouselArticles[index]?.readable_publish_date}</p>
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import moment from "moment";
 
 export const BlogCard = ({
   userName,
@@ -26,11 +27,11 @@ export const BlogCard = ({
             </p>
           </div>
         </div>
-        <div className="flex gap-5 items-center">
+        <div className="flex justify-between items-center">
           <img src={profilePic} className="h-9 rounded-[24px]" />
           <div className="font-medium text-base text-slate-500">{userName}</div>
           <div className="font-normal text-base text-slate-500">
-            {date + ", 2024"}
+            {moment(date).format("MMM Do, YYYY")}
           </div>
         </div>
       </div>

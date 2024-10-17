@@ -36,6 +36,7 @@ export default function App({ Component, pageProps }) {
           carouselArticles,
           setCarouselArticles,
           index,
+          setIndex,
         }}
       >
         <Component {...pageProps} />

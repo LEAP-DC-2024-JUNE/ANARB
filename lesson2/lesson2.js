@@ -2,6 +2,7 @@ const http = require("http");
 const fs = require("fs");
 
 const data = fs.readFileSync("./dev-data/data.json", "utf-8");
+const briefData = fs.readFileSync("./dev-data/brief.json", "utf-8");
 const dataObj = JSON.parse(data);
 
 const server = http.createServer((req, res) => {

@@ -36,8 +36,8 @@ export default async function Page() {
   let products = await data.json();
   console.log(products);
   return (
-    <div className="">
-      <p className="px-16 pt-16 font-bold text-xl">Products</p>
+    <div className="flex flex-col gap-40">
+      <p className="px-16 pt-16 font-bold text-2xl">Products</p>
       <div className="px-16 py-16 flex justify-center gap-[100px]">
         {products.map((product) => {
           return (

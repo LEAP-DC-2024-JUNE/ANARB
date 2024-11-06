@@ -1,10 +1,7 @@
-import { Header } from "../../../components/Header";
-
 const Layout = ({ children }) => {
   return (
     <div>
-      {/* <h1>Products iin layout</h1> */}
-      <Header />
+      <h1>Produce iin layout</h1>
       {children}
     </div>
   );

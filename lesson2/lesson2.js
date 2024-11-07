@@ -7,11 +7,24 @@ const dataObj = JSON.parse(data);
 
 const server = http.createServer((req, res) => {
   let path = req.url;
+  let method = req.method;
 
   if (path === "" || path === "/" || path === "/home") {
     res.end("Hello, this is Home Page");
   } else if (path === "/products") {
     res.end("Hello, this is Products Page");
+  } else if (path.startsWith("/api/products/") && method === "GET") {
+    const paths = pathname.split("/"); // array ruu hiij ugch bn
+    const id = parseInt(paths[3]);
+    const selectedItem = detailedItems.find((item) => item.id === id);
+
+    if (selectedItem) {
+      response.writeHead(200, { "Content-Type": "application/json" });
+      response.end(JSON.stringify(selectedItem));
+    } else {
+      response.writeHead(404, { "Content-Type": "application/json" });
+      response.end(JSON.stringify({ error: "Item is not found" }));
+    }
   } else if (path === "/api") {
     res.writeHead(200, {
       "Content-type": "application/json",

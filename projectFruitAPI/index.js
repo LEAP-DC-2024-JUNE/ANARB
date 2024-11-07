@@ -17,7 +17,7 @@ const initialize = () => {
   let briefContent = fs.readFileSync("./storage/brief.json", "utf-8");
   briefItems = JSON.parse(briefContent);
 
-  let detailsContent = fs.readFileSync("./storage/details.json", "utf-8");
+  let detailsContent = fs.readFileSync("./storage/data.json", "utf-8");
   detailedItems = JSON.parse(detailsContent);
 
   let itemWithMaxId = briefItems.reduce((a, b) => (a.id > b.id ? a : b));
@@ -52,7 +52,7 @@ const server = http.createServer(async (request, response) => {
   // catching method
   const method = request.method;
 
-  if (pathname === "/api/items" && method === "POST") {
+  if (pathname === "/api/products" && method === "POST") {
     // Create
     const data = await parseBody(request); // <==== hereglegchees irsen data
 
@@ -79,11 +79,11 @@ const server = http.createServer(async (request, response) => {
 
     response.writeHead(201, { "Content-Type": "application/text" });
     response.end("Successfully created an item");
-  } else if (pathname === "/api/items" && method === "GET") {
+  } else if (pathname === "/api/products" && method === "GET") {
     // Read all
     response.writeHead(200, { "Content-Type": "application/json" });
     response.end(JSON.stringify(briefItems));
-  } else if (pathname.startsWith("/api/items/") && method === "GET") {
+  } else if (pathname.startsWith("/api/products/") && method === "GET") {
     // GET /api/items/14  ====> ["" "api" "items" "14"] <=== array
     // Read a single item
     const paths = pathname.split("/"); // array ruu hiij ugch bn
@@ -97,7 +97,7 @@ const server = http.createServer(async (request, response) => {
       response.writeHead(404, { "Content-Type": "application/json" });
       response.end(JSON.stringify({ error: "Item is not found" }));
     }
-  } else if (pathname.startsWith("/api/items/") && method === "PUT") {
+  } else if (pathname.startsWith("/api/products/") && method === "PUT") {
     // Update
     // PUT /api/items/14 header, body
     const paths = pathname.split("/");
@@ -131,7 +131,7 @@ const server = http.createServer(async (request, response) => {
       response.writeHead(200, { "Content-Type": "application/text" });
       response.end("Item is updated");
     }
-  } else if (pathname.startsWith("/api/items/") && method === "DELETE") {
+  } else if (pathname.startsWith("/api/products/") && method === "DELETE") {
     // Delete
     // DELETE /api/items/14
     const paths = pathname.split("/");

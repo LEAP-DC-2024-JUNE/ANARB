@@ -6,7 +6,7 @@ export default async function Products() {
   console.log(products);
 
   return (
-    <div className="flex flex-col gap-4 px-[252px]">
+    <div className="flex flex-col gap-4 px-[252px] pb-40">
       <p className="pt-16 font-semibold text-2xl">Products</p>
       <div className="px-16 py-4 flex justify-center gap-4">
         {products.map((product) => {

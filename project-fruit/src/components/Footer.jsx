@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <div className="pt-16 px-[252px] flex flex-col gap-6">
+    <div className="px-[252px] flex flex-col gap-6">
       <div className="flex justify-between border-t-[1px] py-8">
         <div className="flex gap-2.5">
           SHOP

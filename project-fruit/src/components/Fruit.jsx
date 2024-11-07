@@ -18,6 +18,7 @@ export const Fruit = ({ name, desc, nutri, pic, from }) => {
 
         {from}
       </div>
+      <button className="rounded-md border-[1px]">Delete</button>
     </div>
   );
 };

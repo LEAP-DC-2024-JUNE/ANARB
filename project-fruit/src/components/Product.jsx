@@ -9,7 +9,7 @@ export const Product = ({ name, price, image, id }) => {
           <div>{image}</div>
         </div>
         <div className="">
-          <div>{`price: $${price}`}</div>
+          <div>{`Price: $${price}`}</div>
         </div>
       </div>
     </Link>

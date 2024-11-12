@@ -1,9 +1,3 @@
-/* Break down
-1. Front End application using Next JS
-2. Back End application using Node JS ***
-API
-*/
-
 const http = require("http");
 const url = require("url");
 const fs = require("fs");
@@ -25,7 +19,7 @@ const initialize = () => {
 };
 
 const saveDataToFile = () => {
-  fs.writeFile("./storage/details.json", JSON.stringify(detailedItems), () =>
+  fs.writeFile("./storage/data.json", JSON.stringify(detailedItems), () =>
     console.log("Updated detailed information.")
   );
   fs.writeFile("./storage/brief.json", JSON.stringify(briefItems), () =>
@@ -45,6 +39,13 @@ const parseBody = (req) => {
 };
 
 const server = http.createServer(async (request, response) => {
+  // Set CORS headers
+  response.setHeader("Access-Control-Allow-Origin", "*"); // Allow all origins for development
+  response.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET, POST, PUT, DELETE, OPTIONS"
+  ); // Allow specific HTTP methods
+  response.setHeader("Access-Control-Allow-Headers", "Content-Type"); // Allow specific headers
   // catching path (url)
   const reqUrl = url.parse(request.url, true);
   const pathname = reqUrl.pathname;
@@ -52,12 +53,19 @@ const server = http.createServer(async (request, response) => {
   // catching method
   const method = request.method;
 
+  if (method === "OPTIONS") {
+    response.writeHead(200);
+    response.end();
+    return;
+  }
+
   if (pathname === "/api/products" && method === "POST") {
     // Create
     const data = await parseBody(request); // <==== hereglegchees irsen data
 
     const detailedItem = {
       id: currentId,
+      productName: data.productName,
       from: data.from,
       nutrients: data.nutrients,
       quantity: data.quantity,
@@ -114,6 +122,7 @@ const server = http.createServer(async (request, response) => {
       // items[index] = { id: detailedItems[index].id, ...data };
       detailedItems[index] = {
         ...detailedItems[index],
+        productName: data.productName,
         from: data.from,
         nutrients: data.nutrients,
         quantity: data.quantity,

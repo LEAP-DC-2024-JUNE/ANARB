@@ -33,5 +33,6 @@
     "image": "🌽",
     "price": "2.00",
     "organic": false
-  }
+  },
+  { "id": 11, "productName": "Apple", "price": "10", "organic": "false" }
 ]

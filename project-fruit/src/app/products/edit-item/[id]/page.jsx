@@ -121,7 +121,7 @@ const UpdateProducts = ({ params }) => {
             type="radio"
             id="organic"
             name="organic"
-            value={data.organic}
+            value={data.organic ? true : false}
             className="text-black border-[2px] py-[2px] px-[2px]"
             onChange={(e) => setData({ ...data, organic: e.target.value })}
           ></input>

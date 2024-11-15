@@ -10,12 +10,12 @@ router.post("", (request, response) => {
   db.query(sql, [date, description, type, amount], (error, result) => {
     if (error) {
       console.log(
-        "Error occured while inserting a new expense into database" +
+        "Error occured while posting a new expense into database" +
           error.message
       );
       return response.status(500).json({ error_message: error.message });
     }
-    console.log("Succesfully inserted a record ");
+    console.log("Data posted successfully!");
     response.status(201).json({ message: "Successfully Posted!" });
   });
 });
@@ -24,12 +24,10 @@ router.get("", (request, response) => {
   const sql = "SELECT * FROM tb_expenses";
   db.query(sql, (error, result) => {
     if (error) {
-      console.log(
-        "Error occured while executing a select query: " + error.message
-      );
+      console.log("Error occured while selecting query: " + error.message);
       return response.status(500).json({ error_message: error.message });
     }
-    console.log("Successfully executed a select query!");
+    console.log("Successfully selected!");
     response.json(result);
   });
 });
@@ -42,11 +40,10 @@ router.get("/:id", (request, response) => {
       console.log("Error occured while selecting query: " + error.message);
       return response.status(500).json({ error_message: error.message });
     }
-    console.log("Successfully executed a select query!");
+    console.log("Successfully selected!");
     response.json(result);
   });
 });
-
 // // Update
 router.put("/:id", (request, response) => {
   const id = request.params.id;
@@ -62,7 +59,6 @@ router.put("/:id", (request, response) => {
     response.json({ message: "Successfully Updated!" });
   });
 });
-
 // // Delete
 router.delete("/:id", (request, response) => {
   const id = request.params.id;

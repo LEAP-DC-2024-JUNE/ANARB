@@ -40,7 +40,7 @@ const UpdateProducts = ({ params }) => {
   return (
     <div className="px-[252px] py-10 border-[1px] rounded-md flex flex-col gap-5">
       <div>
-        <h1 className="text-3xl font-semibold">Add new item</h1>
+        <h1 className="text-3xl font-semibold">Update an item</h1>
       </div>
       <div className="flex flex-col gap-1">
         <div className="flex gap-2 items-center">

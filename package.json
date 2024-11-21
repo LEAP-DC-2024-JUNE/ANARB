@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@nextui-org/table": "^2.0.40",
     "moment": "^2.30.1"
   }
 }

@@ -21,7 +21,9 @@ router.post("", (request, response) => {
 });
 // // Read all
 router.get("", (request, response) => {
-  const sql = "SELECT * FROM tb_expenses";
+  // const sql = "SELECT * FROM tb_expenses";
+  const sql =
+    "SELECT exp.pk_id, exp.c_date, exp.c_description, exp.c_amount, et.c_type FROM db_express.tb_expenses exp INNER JOIN db_express.tb_expense_types et ON exp.fk_expense_type = et.pk_id";
   db.query(sql, (error, result) => {
     if (error) {
       console.log("Error occured while selecting query: " + error.message);

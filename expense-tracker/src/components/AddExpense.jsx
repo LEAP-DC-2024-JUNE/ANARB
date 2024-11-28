@@ -88,7 +88,7 @@ const AddExpense = ({ isOpen, setIsOpen, fetchData }) => {
               id="date"
               name="date"
               value={data.date}
-              className="text-black border-[2px] py-[2px] px-[2px]"
+              className="text-black border-[1px] py-[2px] px-[2px] rounded-md w-[220px]"
               onChange={handleChange}
             ></input>
           </div>
@@ -101,7 +101,7 @@ const AddExpense = ({ isOpen, setIsOpen, fetchData }) => {
               id="description"
               name="description"
               value={data.description}
-              className="text-black border-[2px] py-[2px] px-[2px]"
+              className="text-black border-[1px] py-[2px] px-[2px] rounded-md w-[220px]"
               placeholder="Description"
               onChange={handleChange}
             ></textarea>
@@ -115,12 +115,12 @@ const AddExpense = ({ isOpen, setIsOpen, fetchData }) => {
               id="type"
               value={data.type}
               onChange={handleChange}
-              className="border-[1px] px-4 py-1 rounded-lg"
+              className="text-black border-[1px] py-[2px] px-[2px] rounded-md w-[220px]"
             >
               <option value="" defaultValue={true} hidden disabled></option>
               <option value="1">Food</option>
-              <option value="3">Transportation</option>
-              <option value="2">Entertainment</option>
+              <option value="2">Transportation</option>
+              <option value="3">Entertainment</option>
               <option value="4">Accommodation</option>
             </select>
           </div>
@@ -135,7 +135,7 @@ const AddExpense = ({ isOpen, setIsOpen, fetchData }) => {
               placeholder="Please enter a number"
               value={data.amount}
               onChange={handleChange}
-              className="border-[1px] rounded-lg"
+              className="text-black border-[1px] py-[2px] px-[2px] rounded-md w-[220px]"
             ></input>
           </div>
         </div>

@@ -2,13 +2,23 @@
 
 import { useState, useEffect } from "react";
 
-const EditExpense = ({ id, setId, fetchData, expense, isOpen, setIsOpen }) => {
+const EditExpense = ({
+  id,
+  setId,
+  fetchData,
+  expense,
+  expenses,
+  isOpen,
+  setIsOpen,
+  exp,
+}) => {
   const defaultData = {
     date: "",
     description: "",
     type: "",
     amount: 0,
   };
+  //   console.log(exp);
 
   const [data, setData] = useState(defaultData);
   const [errors, setErrors] = useState({});
@@ -84,36 +94,42 @@ const EditExpense = ({ id, setId, fetchData, expense, isOpen, setIsOpen }) => {
         <div>
           <h1 className="font-bold">Edit Expense: </h1>
         </div>
-        <div className="flex flex-col gap-2 text-sm">
-          <div className="flex gap-2 items-center">
-            <label htmlFor="date">Date:</label>
+        <div className="flex flex-col gap-2 text-sm items-start min-w-[14rem]">
+          <div className="flex flex-col gap-1 w-full">
+            <label htmlFor="date" className="text-md font-semibold">
+              Date:
+            </label>
             <input
               type="date"
               id="date"
               name="date"
               value={data?.date}
-              className="text-black border-[2px] py-[2px] px-[2px]"
+              className="text-black border-[1px] py-[2px] px-[2px] rounded-md"
               onChange={(event) =>
                 setData({ ...data, date: event.target.value })
               }
             ></input>
           </div>
-          <div className="flex gap-2 items-center">
-            <label htmlFor="description">Description:</label>
+          <div className="flex flex-col gap-1 w-full">
+            <label htmlFor="description" className="text-md font-semibold">
+              Description:
+            </label>
             <textarea
               maxLength={100}
               id="description"
               name="description"
               value={data?.description}
-              className="text-black border-[2px] py-[2px] px-[2px]"
+              className="text-black border-[1px] py-[2px] px-[2px] rounded-md"
               placeholder="Description"
               onChange={(event) =>
                 setData({ ...data, description: event.target.value })
               }
             ></textarea>
           </div>
-          <div className="flex gap-2 items-center">
-            <label htmlFor="type">Type:</label>
+          <div className="flex flex-col gap-1 w-full">
+            <label htmlFor="type" className="text-md font-semibold">
+              Type:
+            </label>
             <select
               name="type"
               id="type"
@@ -121,39 +137,44 @@ const EditExpense = ({ id, setId, fetchData, expense, isOpen, setIsOpen }) => {
               onChange={(event) =>
                 setData({ ...data, type: event.target.value })
               }
-              className="border-[1px] px-4 py-1 rounded-lg"
+              className="text-black border-[1px] py-[2px] px-[2px] rounded-md"
             >
               <option value="" defaultValue={true} hidden disabled></option>
               <option value="1">Food</option>
-              <option value="3">Transportation</option>
-              <option value="2">Entertainment</option>
+              <option value="2">Transportation</option>
+              <option value="3">Entertainment</option>
               <option value="4">Accommodation</option>
             </select>
           </div>
           <div className="flex flex-col gap-1 w-full">
-            <label htmlFor="amount" className="">
+            <label htmlFor="amount" className="text-md font-semibold">
               Amount:
             </label>
             <input
               name="amount"
               id="amount"
-              placeholder="Please enter a number"
+              //   placeholder="Please enter a number"
               value={data?.amount}
               onChange={handleChange}
-              className="border-[1px] rounded-lg"
+              className="text-black border-[1px] py-[2px] px-[2px] rounded-md"
             ></input>
           </div>
         </div>
-        <div className="flex gap-4">
+
+        <div className="text-red-400 font-medium text-lg">
+          {showError && "Missing information."}
+        </div>
+
+        <div className="flex justify-around">
           <button
             onClick={handleClickEdit}
-            className="border-[1px] border-black p-2 rounded-md"
+            className="border-[1px] border-black rounded-md p-2"
           >
             Edit
           </button>
           <button
             onClick={closeEditWindow}
-            className="border-[1px] border-black p-2 rounded-md"
+            className="border-[1px] border-black rounded-md p-2"
           >
             Cancel
           </button>

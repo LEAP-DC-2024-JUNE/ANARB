@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import EditExpense from "@/components/EditExpense";
 
 const moment = require("moment");
 const Expense = ({
@@ -10,6 +11,7 @@ const Expense = ({
   fetchData,
   editId,
   setEditId,
+  expenses,
 }) => {
   const formatDate = (date) => {
     return moment(date).format("L");
@@ -36,7 +38,7 @@ const Expense = ({
       <td className="p-2">{expense.c_description}</td>
       <td className="p-2">{expense.c_type}</td>
       <td className="p-2">${expense.c_amount}</td>
-      <td>
+      <td className="">
         <select className="" onChange={(event) => handleAction(event)}>
           <option value=""></option>
           <option value="edit" className="text-slate-300 p-4">
@@ -47,6 +49,15 @@ const Expense = ({
           </option>
         </select>
       </td>
+      {/* <EditExpense
+        isOpen={isEditOpen}
+        setIsOpen={setIsEditOpen}
+        id={editId}
+        setId={setEditId}
+        // expense={expenses.find((expense) => expense.id === editId)}
+        fetchData={fetchData}
+        exp={expense}
+      /> */}
     </tr>
   );
 };

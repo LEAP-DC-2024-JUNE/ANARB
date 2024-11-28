@@ -4,7 +4,9 @@ import AddExpense from "@/components/AddExpense";
 import EditExpense from "@/components/EditExpense";
 import Expense from "@/components/Expense";
 import Link from "next/link";
+import { Loading } from "@/components/Loading";
 import { useEffect, useState } from "react";
+import { Charts } from "@/components/Charts";
 
 const Home = () => {
   // let data = await fetch("http://127.0.0.1:3001/api/expenses");
@@ -36,13 +38,13 @@ const Home = () => {
 
   return (
     <div>
-      <h1 className="text-2xl text-center pt-2">Expenses</h1>
-      <div className="p-4">
-        <table className="w-full border-collapse border-[1px] border-black text-xs">
+      <h1 className="text-2xl text-center pt-2 md:text-3xl">Expenses</h1>
+      <div className="p-4 md:px-[200px]">
+        <table className="w-full border-collapse border-[1px] border-black text-xs md:text-lg">
           <thead>
             <tr className="bg-slate-300">
               <th className="p-2">Date</th>
-              <th>Description</th>
+              <th className="">Description</th>
               <th>Type</th>
               <th>Amount</th>
               <th>Action</th>
@@ -68,12 +70,12 @@ const Home = () => {
           onClick={() => {
             setIsAddOpen(true);
           }}
-          className="border-2 rounded-md border-black p-1 text-sm"
+          className="border-2 rounded-md border-black p-1 text-sm md:text-lg md:p-[10px]"
         >
           Add Expense
         </button>
-        <Link href="/chart">
-          <button className="border-2 rounded-md border-black p-1 text-sm">
+        <Link href="/charts">
+          <button className="border-2 rounded-md border-black p-1 text-sm md:text-lg md:p-[10px]">
             Show Chart
           </button>
         </Link>
@@ -90,7 +92,11 @@ const Home = () => {
         setId={setEditId}
         expense={expenses.find((expense) => expense.id === editId)}
         fetchData={fetchData}
+        expenses={expenses}
       />
+      <div className="md:px-[200px] md:pt-[50px]">
+        <Charts expenses={expenses} />
+      </div>
     </div>
   );
 };

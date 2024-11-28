@@ -1,9 +1,12 @@
+const dotenv = require("dotenv");
 const express = require("express");
 const mongoose = require("mongoose");
 
 const app = express();
-const PORT = 3010;
-const MONGO_URI = "mongodb://localhost:27017/db-expense-tracker";
+dotenv.config({ path: "./configs/.env" });
+
+const PORT = process.env.PORT;
+const MONGO_URI = process.env.MONGO_URI;
 
 app.use(express.json());
 
